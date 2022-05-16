@@ -1,5 +1,5 @@
 // Math
-function mid(number1, number2) {
+function getMid(number1, number2) {
   return Math.floor((number1 + number2) / 2)
 }
 
@@ -18,6 +18,13 @@ function ascending(array) {
 
 function descending(array) {
   
+}
+
+function minArray(array) {
+  let min = null;
+  for (let i = 0; i < array.length; i++) {
+    min == null ? min = array[i]:
+  }
 }
 
 // Strings
