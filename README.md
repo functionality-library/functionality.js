@@ -1,2 +1,2 @@
-# functionalty.js
-A Tool of Developers, Usefull Javascript Functions to Easily do what you want
+# <p align="center">Functionalty.js</p>
+A JavaScript Tool To Make Your Work Easily/Faster
