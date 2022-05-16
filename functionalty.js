@@ -61,7 +61,7 @@ function isOdd(number) {
 }
 
 function isPalindrome(word) {
-  return word == reverseString(word);
+  return word.toString() == reverseString(word.toString());
 }
 
 function isPrime(number) {
