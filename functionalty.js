@@ -39,5 +39,5 @@ function reverseNum(number) {
   if (number == 0) {
     return number;
   }
-  return Math.floor(parseInt(number)) > 0 ? number.toString().split("").reverse().join("") : "-" + number.toString().split("").reverse().join("");
+  return Math.floor(parseInt(number)) > 0 ? parseInt(number.toString().split("").reverse().join("")) : parseInt("-" + number.toString().split("").reverse().join(""));
 }
