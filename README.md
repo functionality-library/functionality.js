@@ -1,7 +1,7 @@
 # <p align="center">Functionalty.js (beta) 🪔</p>
 
 ## About
-- This Is A JavaScript Library To Make Your Work Easily/Faster,<br />
+- This Is A JavaScript Library To Make Your Work Easier/Faster,<br />
   You Can See Functionalty.js Website From Here
   
 ## Installation
