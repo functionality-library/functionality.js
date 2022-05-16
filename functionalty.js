@@ -1,3 +1,8 @@
+// Math
+function mid(number1, number2) {
+  return Math.floor((number1 + number2) / 2)
+}
+
 // Arrays
 function filterArray(array, value) {
   return array.filter(e => e != value);
