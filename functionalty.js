@@ -9,7 +9,7 @@ function filterArray(array, value) {
 }
 
 function sumOfArray(array) {
-  return array.reduce();
+  return array.reduce((a, b) => a + b, 0);
 }
 
 function ascending(array) {
