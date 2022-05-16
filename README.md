@@ -1,4 +1,4 @@
-# <p align="center">Functionalty.js (beta) 🪔</p>
+# <p align="center">Functionalty.js (beta) 🔥</p>
 
 ## About
 - This Is A JavaScript Library To Make Your Work Easier/Faster,<br />
