@@ -36,5 +36,8 @@ function isPalindrome(word) {
 
 // Numbers
 function reverseNum(number) {
-  return
+  if (number == 0) {
+    return number;
+  }
+  return Math.floor(parseInt(number)) > 0 ? number.toString().split("").reverse().join("") : "-" + number.toString().split("").reverse().join("");
 }
