@@ -23,8 +23,19 @@ function descending(array) {
 function minArray(array) {
   let min = null;
   for (let i = 0; i < array.length; i++) {
-    min == null ? min = array[i]:
+    min == null ? min = array[i] : "";
+    array[i] < min ? min = array[i] : "";
   }
+  return min;
+}
+
+function maxArray(array) {
+  let max = null;
+  for (let i = 0; i < array.length; i++) {
+    max == null ? max = array[i] : "";
+    array[i] > max ? max = array[i] : "";
+  }
+  return max;
 }
 
 // Strings
