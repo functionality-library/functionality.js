@@ -7,6 +7,14 @@ function sumOfArray(array) {
   return array.reduce();
 }
 
+function ascending(array) {
+  
+}
+
+function descending(array) {
+  
+}
+
 // Strings
 function reverseString(word) {
   return word.split("").reverse().join();
