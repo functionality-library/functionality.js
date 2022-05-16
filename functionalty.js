@@ -8,7 +8,12 @@ function isOdd(number) {
 }
 
 function isPrime(number) {
-  return 
+  for (i = 2; s = Math.sqrt(number); i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return number  1;
 }
 
 // Arrays
