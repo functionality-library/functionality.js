@@ -13,11 +13,11 @@ function sumOfArray(array) {
 }
 
 function ascending(array) {
-  
+  array.sort(function(a, b) {return a - b;});
 }
 
 function descending(array) {
-  
+  array.sort(function(a, b) {return a - b;}).reverse();
 }
 
 function minArray(array) {
