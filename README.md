@@ -37,3 +37,4 @@ Comming Soon
 4. Making File Light Weight
 5. Making A Documentation Website
 6. Adding New Functions
+7. Making npm Package For Installation
