@@ -9,7 +9,7 @@
 - So To Get Started Using Functionalty.js Library,<br />
    You Have To Install It By Node.js
    ```node
-   npm i Ali-Eldeba/functionalty.js
+   Comming Soon!
    ```
 - Or You Can Install it By ...
 
@@ -29,3 +29,10 @@ import * from "functionalty.min.js";
 - Now You Have Been Setup Everything
 - You Can Visit Functionalty.js Site From <a>Here</a>
 - Or This is A Quick Start From Here
+
+## <p align="center">Here Is What We Are Working On 🤞</p>
+1. Converting functionalty.js File Into TypeScript File
+2. Making File Supported By All Of Search Engines
+3. Making File Compressed
+4. Making A Documentation Website
+5. Adding New Functions
