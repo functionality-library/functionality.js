@@ -9,7 +9,7 @@
 - So To Get Started Using Functionalty.js Library,<br />
    You Have To Install It By Node.js
    ```node
-   Comming Soon!
+   Comming Soon
    ```
 - Or You Can Install it By ...
 
@@ -21,7 +21,7 @@ import * from "functionalty.js";
 ```
 - Or You Can Import Minified Version (recommended)
 ```javascript
-import * from "functionalty.min.js";
+Comming Soon
 ```
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
 
