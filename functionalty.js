@@ -10,6 +10,19 @@ function getMid(number1, number2) {
   return Math.floor((number1 + number2) / 2)
 }
 
+// Randoms
+
+/*
+* Get a random number
+* 
+* @param {number} start
+* @param {number} end
+* @returns {number}
+*/
+function randomNum(start, end) {
+  return Math.floor(Math.random() * (end + 1) + start)
+}
+
 // Arrays
 
 /**
