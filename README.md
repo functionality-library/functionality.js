@@ -34,5 +34,6 @@ import * from "functionalty.min.js";
 1. Converting functionalty.js File Into TypeScript File
 2. Making File Supported By All Of Search Engines
 3. Making File Compressed
-4. Making A Documentation Website
-5. Adding New Functions
+4. Making File Light Weight
+5. Making A Documentation Website
+6. Adding New Functions
