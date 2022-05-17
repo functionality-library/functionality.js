@@ -35,8 +35,9 @@ Comming Soon
 2. Making File Supported By All Of Search Engines
 3. Making File Compressed
 4. Making File Light Weight
-5. Making A Documentation Website
-6. Adding New Functions
-7. Making npm Package For Installation
+5. Handling Function Errors
+6. Making A Documentation Website
+7. Adding New Functions
+8. Making npm Package For Installation
 
 # <p align="center">Feel Free Forking And Commiting To This Repositry 🤝</p>
