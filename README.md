@@ -8,6 +8,9 @@
 ## Installation
 - So To Get Started Using Functionalty.js Library,<br />
    You Have To Install It By Node.js
+   ```node
+   npm i Ali-Eldeba/functionalty.js
+   ```
 - Or You Can Install it By ...
 
 ## Importing
