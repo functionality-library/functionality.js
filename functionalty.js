@@ -23,6 +23,16 @@ function randomNum(start, end) {
   return Math.floor(Math.random() * (end + 1) + start)
 }
 
+/*
+* Get a random element from an array
+*
+* @param {any[]} array
+* @returns
+*/
+function randomElementFrom(array) {
+  return array[Math.floor(Math.random() * array.length)];
+}
+
 // Arrays
 
 /**
