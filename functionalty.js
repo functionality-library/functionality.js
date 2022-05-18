@@ -94,6 +94,19 @@ function maxArray(array) {
   return Math.max(...array) // using math.max() to get maximum value in array is faster than using a for loop
 }
 
+/*
+* Remove duplicated Elemets in array
+*
+* @param {any} value
+* @returns {array}
+*/
+function removeDuplicate(value) {
+  let v = Array.isArray(value) ? value : value.toString().split("");
+  v.filter(function (ele, index) {
+     return v.indexOf(ele) === index;
+  )
+}
+
 // Strings
 
 /**
