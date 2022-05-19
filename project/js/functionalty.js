@@ -19,8 +19,8 @@ function getMid(number1, number2) {
  * @param {number} end
  * @returns {number}
  */
-function randomNum(start, end) {
-  return Math.floor(Math.random() * (end + 1) + start);
+function randomNum(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 /**
@@ -60,18 +60,17 @@ function sumOfArray(array) {
  * Sort an array of numbers in ascending order
  *
  * @param {number[]} array array of numbers
- */
 function ascending(array) {
   array.sort(function (a, b) {
     return a - b;
   });
 }
+*/
 
 /**
  * Sort an array of numbers in descending order
  *
  * @param {number[]} array array of numbers
- */
 function descending(array) {
   array
     .sort(function (a, b) {
@@ -79,6 +78,7 @@ function descending(array) {
     })
     .reverse();
 }
+*/
 
 /**
  * Get minimum value in array
@@ -105,101 +105,99 @@ function maxArray(array) {
  *
  * @param {any} value
  * @returns {array}
- */
-function removeDuplicate(value) {
-  let v = Array.isArray(value) ? value : value.toString().split("");
-  v.filter(function (ele, index) {
-    return v.indexOf(ele) === index;
+function removeDuplicate(array) {
+  array.filter(function (ele, index) {
+    return array.indexOf(ele) === index;
   });
+*/
 
-  // Strings
+// Strings
 
-  /**
-   *
-   * @param {string} word string to be reversed
-   * @returns {string}
-   */
-  function reverseString(word) {
-    return word.split("").reverse().join("");
-  }
+/**
+ *
+ * @param {string} word string to be reversed
+ * @returns {string}
+ */
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
 
-  /**
-   * Making first letter capital in the word
-   *
-   * @param {string} word
-   * @returns {string}
-   */
-  function capitalize(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-  }
+/**
+ * Making first letter capital in the word
+ *
+ * @param {string} word
+ * @returns {string}
+ */
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
 
-  // Numbers
+// Numbers
 
-  /**
-   * reverse a number (e.g. 12345 -> 54321)
-   *
-   * @param {number} number
-   * @returns {number}
-   */
-  function reverseNum(number) {
-    // this code is changed from the original one because it didn't work properly when the number is decimal
-    if (number < 10 && number > -10) {
-      return number;
-    }
-    const parsedNumber = +(number > 10 ? number : number * -1)
-      .toString()
-      .split("")
-      .reverse()
-      .join("");
-    return number > 10 ? parsedNumber : parsedNumber * -1; // this code more readable than the other one also it works with decimals too
-  }
-
-  // Valid Checks
-
-  /**
-   * check if a number is even
-   *
-   * @param {number} number
-   * @returns {boolean}
-   */
-  function isEven(number) {
-    return number % 2 == 0;
-  }
-
-  /**
-   * check if a number is odd
-   *
-   * @param {number} number
-   * @returns {boolean}
-   */
-  function isOdd(number) {
-    return number % 2 != 0;
-  }
-
-  /**
-   * check if a string is a palindrome
-   *
-   * @param {string} word
-   * @returns {boolean}
-   */
-  function isPalindrome(word) {
-    return word.toString() == reverseString(word.toString());
-  }
-
-  /**
-   * check if a number is prime
-   *
-   * @param {number} number
-   * @returns {number | boolean}
-   */
-  function isPrime(number) {
-    // this code is changed from the original one because it was causing infinite loop
-    // when number % i never equals 0
-    for (i = 2, s = Math.sqrt(number); i <= s; i++) {
-      if (number % i === 0) {
-        return false;
-      }
-    }
+/**
+ * reverse a number (e.g. 12345 -> 54321)
+ *
+ * @param {number} number
+ * @returns {number}
+ */
+function reverseNum(number) {
+  // this code is changed from the original one because it didn't work properly when the number is decimal
+  if (number < 10 && number > -10) {
     return number;
   }
+  const parsedNumber = +(number > 10 ? number : number * -1)
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
+  return number > 10 ? parsedNumber : parsedNumber * -1; // this code more readable than the other one also it works with decimals too
+}
+
+// Valid Checks
+
+/**
+ * check if a number is even
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isEven(number) {
+  return number % 2 == 0;
+}
+
+/**
+ * check if a number is odd
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isOdd(number) {
+  return number % 2 != 0;
+}
+
+/**
+ * check if a string is a palindrome
+ *
+ * @param {string} word
+ * @returns {boolean}
+ */
+function isPalindrome(word) {
+  return word.toString() == reverseString(word.toString());
+}
+
+/**
+ * check if a number is prime
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isPrime(number) {
+  // this code is changed from the original one because it was causing infinite loop
+  // when number % i never equals 0
+  for (i = 2, s = Math.sqrt(number); i <= s; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
 }
