@@ -72,11 +72,7 @@ function ascending(array) {
  *
  * @param {number[]} array array of numbers
 function descending(array) {
-  array
-    .sort(function (a, b) {
-      return a - b;
-    })
-    .reverse();
+  return array.sort((a, b) => b.localeCompare(a));
 }
 */
 

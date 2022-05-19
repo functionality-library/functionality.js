@@ -6,6 +6,16 @@ var babel = require("gulp-babel");
 var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 
+gulp.task("html", (done) => {
+  gulp
+    .src(["./project/css/*.css", "./project/css/**/*.css"])
+    .pipe(prefix("last 2 versions"))
+    .pipe(concat("style.css"))
+    .pipe(minify())
+    .pipe(gulp.dest("./website"));
+  done();
+});
+
 gulp.task("css", (done) => {
   gulp
     .src(["./project/css/*.css", "./project/css/**/*.css"])
@@ -18,7 +28,14 @@ gulp.task("css", (done) => {
 
 // JS Tasks
 gulp.task("js", (done) => {
-  gulp.src("./project/js/**/*.js").pipe(uglify()).pipe(gulp.dest("./dist"));
+  gulp
+    .src([
+      "./project/js/*.js",
+      "./project/js/**/*.js",
+      "!./project/js/functionalty.js",
+    ])
+    .pipe(uglify())
+    .pipe(gulp.dest("./dist"));
   done();
 });
 
@@ -33,4 +50,4 @@ gulp.task("functionalty", (done) => {
 });
 
 // Making The Tasks Work Without Problems in Gulp V4.0.2
-gulp.task("default", gulp.parallel("css", "js", "functionalty"));
+gulp.task("default", gulp.parallel("html", "css", "js", "functionalty"));
