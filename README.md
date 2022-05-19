@@ -1,5 +1,7 @@
 # <p align="center">Functionalty.js (beta) 🪔</p>
 
+<img align="center" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/>
+
 ## About ✍️
 
 - This Is A JavaScript Library To Make Your Work Easier/Faster,<br />
