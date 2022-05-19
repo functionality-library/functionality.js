@@ -55,7 +55,7 @@ import * from "functionalty.min.js";
 ## To Get Started Contributing 🔥
 - First Clone The Repository
 ```cmd
-git clone URL
+git clone https://github.com/Ali-Eldeba/functionalty.js.git
 ```
 - Then Install Packages (node_modules)
 ```node
