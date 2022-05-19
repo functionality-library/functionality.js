@@ -17,15 +17,9 @@ gulp.task("css", (done) => {
 });
 
 // JS Tasks
-gulp.task("js", function () {
-  return gulp
-    .src("src/app.js")
-    .pipe(
-      babel({
-        presets: ["@babel/preset-env"],
-      })
-    )
-    .pipe(gulp.dest("dist"));
+gulp.task("js", (done) => {
+  gulp.src("./project/js/**/*.js").pipe(uglify()).pipe(gulp.dest("./dist"));
+  done();
 });
 
 // Functionalty.js File Task

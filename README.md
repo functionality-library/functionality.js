@@ -53,12 +53,17 @@ import * from "functionalty.min.js";
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
 ## To Get Started Contributing 🔥
+
 - First Clone The Repository
+
 ```cmd
 git clone https://github.com/Ali-Eldeba/functionalty.js.git
 ```
+
 - Then Install Packages (node_modules)
+
 ```node
 npm install
 ```
+
 - Feel Free To Add What You Want!
