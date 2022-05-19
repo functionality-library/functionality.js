@@ -50,4 +50,15 @@ import * from "functionalty.min.js";
 8. Adding New Functions
 9. Making npm Package For Installation
 
-# <p align="center">Feel Free Forking And Commiting To This Repositry 🤝</p>
+# <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
+
+## To Get Started Contributing 🔥
+- First Clone The Repository
+```cmd
+git clone URL
+```
+- Then Install Packages (node_modules)
+```node
+npm install
+```
+- Feel Free To Add What You Want!
