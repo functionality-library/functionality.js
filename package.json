@@ -1,0 +1,32 @@
+{
+  "name": "functionalty.js",
+  "version": "1.0.0",
+  "description": "- This Is A JavaScript Library To Make Your Work Easier/Faster,<br />\r   You Can See Functionalty.js Website From Here\r - Born In May  5 / 16 / 2022",
+  "main": "functionalty.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ali-Eldeba/functionalty.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ali-Eldeba/functionalty.js/issues"
+  },
+  "homepage": "https://github.com/Ali-Eldeba/functionalty.js#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.12",
+    "del": "^6.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {}
+}
