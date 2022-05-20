@@ -13,7 +13,7 @@ var livereload = require("gulp-livereload");
 gulp.task("html", () => {
   require("./server.js");
   return gulp
-    .src("./project/html/*.pug", "./project/html/**/*.pug")
+    .src("./project/html/*.pug", "./project/html/pages/*.pug")
     .pipe(pug({ pretty: false }))
     .pipe(gulp.dest("./website"))
     .pipe(livereload());
@@ -64,7 +64,10 @@ gulp.task("watch", () => {
     ["./project/html/*.pug", "./project/html/**/*.pug"],
     gulp.series("html")
   );
-  gulp.watch("./project/css/main.scss", gulp.series("styles"));
+  gulp.watch(
+    ["./project/css/**.scss", "./project/css/**.scss"],
+    gulp.series("styles")
+  );
   gulp.watch(
     [
       "./project/js/*.js",
@@ -75,9 +78,3 @@ gulp.task("watch", () => {
   );
   gulp.watch("./project/js/functionalty.js", gulp.series("functionalty"));
 });
-
-// Making The Tasks Work Without Problems in Gulp V4.0.2
-// gulp.task(
-//   "default",
-//   gulp.parallel("html", "styles", "scripts", "functionalty", "watch")
-// );
