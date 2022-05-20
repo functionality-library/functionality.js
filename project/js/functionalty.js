@@ -113,11 +113,11 @@ function maxArray(array) {
  *
  * @param {any} value
  * @returns {array}
+ */
 function removeDuplicate(array) {
   array.filter(function (ele, index) {
-    return array.indexOf(ele) === index;
-  });
-*/
+    return [...new Set(array)];
+});
 
 // Strings
 
