@@ -1,10 +1,15 @@
 # <p align="center"><img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/> Functionalty.js (beta) <img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/></p>
 
+<!-- License -->
+![license](https://img.shields.io/github/license/Ali-Eldeba/functionalty.js)
+
+![Node Version](https://img.shields.io/badge/Node-v13.14.0-red)
+
 ## About ✍️
 
 - This Is A JavaScript Library To Make Your Work Easier/Faster,<br />
   You Can See Functionalty.js Website From Here
-- Born In May 5 / 16 / 2022
+- Project Created In 16 / 5 / 2022
 
 ## Installation ⬇️
 
@@ -43,8 +48,8 @@ import * from "functionalty.min.js";
 1. Adding Logo
 2. Converting functionalty.js File Into TypeScript File
 3. Making File Supported By All Of Search Engines
-4. Making File Compressed
-5. Making File Light Weight
+4. ✔️ Making File Compressed
+5. ✔️ Making File Light Weight
 6. Handling Function Errors
 7. Making A Documentation Website
 8. Adding New Functions

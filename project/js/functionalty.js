@@ -10,6 +10,10 @@ function getMid(number1, number2) {
   return Math.floor((number1 + number2) / 2);
 }
 
+function getFactors(number) {
+  return [...Array(number + 1).keys()].filter(i=>number % i === 0);
+}
+
 // Randoms
 
 /**
@@ -23,6 +27,10 @@ function randomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+function randomBoolean() {
+  return Math.random() >= 0.5;
+}
+
 /**
  * Get a random element from an array
  *
@@ -31,6 +39,10 @@ function randomNum(min, max) {
  */
 function randomElementFrom(array) {
   return array[Math.floor(Math.random() * array.length)];
+}
+
+function randomHex() {
+  return `#${Math.floor(Math.random() * 0xffffff).toString(16).padEnd(6, "0")}`;
 }
 
 // Arrays
@@ -101,11 +113,11 @@ function maxArray(array) {
  *
  * @param {any} value
  * @returns {array}
+ */
 function removeDuplicate(array) {
   array.filter(function (ele, index) {
-    return array.indexOf(ele) === index;
-  });
-*/
+    return [...new Set(array)];
+});
 
 // Strings
 
