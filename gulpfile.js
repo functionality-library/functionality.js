@@ -12,7 +12,7 @@ var pug = require("gulp-pug");
 gulp.task("html", () => {
   require("./server.js");
   return gulp
-    .src("./project/html/index.pug")
+    .src("./project/html/*.pug", "./project/html/**/*.pug")
     .pipe(pug({ pretty: false }))
     .pipe(gulp.dest("./website"));
 });
@@ -56,7 +56,10 @@ gulp.task("functionalty", () => {
 // Watch Task (Main Task)
 gulp.task("watch", () => {
   require("./server.js");
-  gulp.watch("./project/html/index.pug", gulp.series("html"));
+  gulp.watch(
+    ["./project/html/*.pug", "./project/html/**/*.pug"],
+    gulp.series("html")
+  );
   gulp.watch("./project/css/main.scss", gulp.series("styles"));
   gulp.watch(
     [
