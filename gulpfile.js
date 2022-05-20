@@ -7,6 +7,7 @@ var babel = require("gulp-babel");
 var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var pug = require("gulp-pug");
+var livereload = require("gulp-livereload");
 
 // HTML Task
 gulp.task("html", () => {
@@ -14,7 +15,8 @@ gulp.task("html", () => {
   return gulp
     .src("./project/html/*.pug", "./project/html/**/*.pug")
     .pipe(pug({ pretty: false }))
-    .pipe(gulp.dest("./website"));
+    .pipe(gulp.dest("./website"))
+    .pipe(livereload());
 });
 
 // CSS Styles Task
@@ -26,7 +28,8 @@ gulp.task("styles", () => {
     .pipe(prefix("last 2 versions"))
     .pipe(concat("style.css"))
     .pipe(minify())
-    .pipe(gulp.dest("./website"));
+    .pipe(gulp.dest("./website"))
+    .pipe(livereload());
 });
 
 // JS Tasks
@@ -40,7 +43,8 @@ gulp.task("scripts", () => {
     ])
     .pipe(uglify())
     .pipe(concat("main.js"))
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("./dist"))
+    .pipe(livereload());
 });
 
 // Functionalty.js File Task
@@ -73,7 +77,7 @@ gulp.task("watch", () => {
 });
 
 // Making The Tasks Work Without Problems in Gulp V4.0.2
-gulp.task(
-  "default",
-  gulp.parallel("html", "styles", "scripts", "functionalty", "watch")
-);
+// gulp.task(
+//   "default",
+//   gulp.parallel("html", "styles", "scripts", "functionalty", "watch")
+// );
