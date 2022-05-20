@@ -4,7 +4,7 @@
 
 - This Is A JavaScript Library To Make Your Work Easier/Faster,<br />
   You Can See Functionalty.js Website From Here
-- Born In May 5 / 16 / 2022
+- Project Created In 16 / 5 / 2022
 
 ## Installation ⬇️
 
