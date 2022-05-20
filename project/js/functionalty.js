@@ -10,6 +10,10 @@ function getMid(number1, number2) {
   return Math.floor((number1 + number2) / 2);
 }
 
+function getFactors(number) {
+  return [...Array(number + 1).keys()].filter(i=>number % i === 0);
+}
+
 // Randoms
 
 /**
