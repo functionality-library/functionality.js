@@ -43,8 +43,8 @@ import * from "functionalty.min.js";
 1. Adding Logo
 2. Converting functionalty.js File Into TypeScript File
 3. Making File Supported By All Of Search Engines
-4. Making File Compressed
-5. Making File Light Weight
+4. ✔️ Making File Compressed
+5. ✔️ Making File Light Weight
 6. Handling Function Errors
 7. Making A Documentation Website
 8. Adding New Functions
