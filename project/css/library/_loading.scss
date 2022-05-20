@@ -7,7 +7,7 @@ $peak: 40%; // pancake's highest level, obviously ;)
 $color_back: #ffde6b; // background
 $color: #333; // the rest
 
-body {
+.loading {
   background-color: $color_back;
   height: 100vh;
   width: 100vw;

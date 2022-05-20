@@ -1,3 +1,4 @@
+// Gulp Plugins
 var gulp = require("gulp");
 var minify = require("gulp-clean-css");
 var prefix = require("gulp-autoprefixer");
@@ -28,7 +29,7 @@ gulp.task("styles", () => {
     .pipe(prefix("last 2 versions"))
     .pipe(concat("style.css"))
     .pipe(minify())
-    .pipe(gulp.dest("./website"))
+    .pipe(gulp.dest("./website/css"))
     .pipe(livereload());
 });
 

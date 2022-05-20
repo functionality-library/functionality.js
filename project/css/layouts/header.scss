@@ -1,14 +1,20 @@
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  ul {
+nav {
+  .container {
     display: flex;
-    list-style-type: none;
-    li {
-      margin: 0 15px;
-      &:hover {
-        color: red;
+    align-items: center;
+    justify-content: space-between;
+    .logo {
+      width: 30px;
+    }
+    ul {
+      display: flex;
+      list-style-type: none;
+      li {
+        margin: 0 15px;
+        text-transform: capitalize;
+        &:hover {
+          color: red;
+        }
       }
     }
   }
