@@ -1,10 +1,6 @@
 // This File Only For Calling Files
 
 // Importing
-@import url(./_global.scss);
-div {
-  display: none;
-  p {
-    align-items: center;
-  }
-}
+@import "./global";
+@import "./layouts/header.scss";
+@import "./library/loading.scss";
