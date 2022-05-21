@@ -57,6 +57,7 @@ import * from "functionalty.min.js";
 7. Making A Documentation Website
 8. Adding New Functions
 9. Making npm Package For Installation
+10. Making a CDN Importing
 
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
