@@ -18,7 +18,10 @@
   ```node
   Comming Soon
   ```
-- Or You Can Install it By ...
+- Or You Can Install it By CDN
+```html
+<script src="Comming Soon"></script>
+```
 
 ## Importing 🦐
 
