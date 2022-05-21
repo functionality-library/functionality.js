@@ -1,9 +1,11 @@
 # <p align="center"><img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s" /> Functionalty.js (beta) <img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/></p>
 
+<p float="right">
 <!-- License -->
-![license](https://img.shields.io/github/license/Ali-Eldeba/functionalty.js)
-
-![Node Version](https://img.shields.io/badge/Node-v13.14.0-red)
+<img src="https://img.shields.io/github/license/Ali-Eldeba/functionalty.js" />
+<!-- Node Version -->
+<img src="https://img.shields.io/badge/Node-v13.14.0-red" />
+</p>
 
 ## About ✍️
 
