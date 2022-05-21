@@ -14,7 +14,7 @@ var livereload = require("gulp-livereload");
 gulp.task("html", () => {
   require("./server.js");
   return gulp
-    .src("./project/html/*.pug", "./project/html/pages/*.pug")
+    .src(["./project/html/*.pug", "./project/html/pages/*.pug"])
     .pipe(pug({ pretty: false }))
     .pipe(gulp.dest("./website"))
     .pipe(livereload());
@@ -24,7 +24,7 @@ gulp.task("html", () => {
 gulp.task("styles", () => {
   require("./server.js");
   return gulp
-    .src("./project/css/main.scss")
+    .src(["./project/css/*.scss", "./project/css/**/*.scss"])
     .pipe(sass())
     .pipe(prefix("last 2 versions"))
     .pipe(concat("style.css"))
@@ -61,14 +61,17 @@ gulp.task("functionalty", () => {
 // Watch Task (Main Task)
 gulp.task("watch", () => {
   require("./server.js");
+  livereload.listen();
   gulp.watch(
     ["./project/html/*.pug", "./project/html/**/*.pug"],
     gulp.series("html")
   );
+
   gulp.watch(
-    ["./project/css/**.scss", "./project/css/**.scss"],
+    ["./project/css/*.scss", "./project/css/**/*.scss"],
     gulp.series("styles")
   );
+
   gulp.watch(
     [
       "./project/js/*.js",
@@ -77,5 +80,6 @@ gulp.task("watch", () => {
     ],
     gulp.series("scripts")
   );
+
   gulp.watch("./project/js/functionalty.js", gulp.series("functionalty"));
 });

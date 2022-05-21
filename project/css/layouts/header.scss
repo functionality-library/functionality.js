@@ -1,20 +1,52 @@
+@import "../library/variables";
 nav {
+  background-color: $js;
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: fit-content;
     .logo {
       width: 30px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #000;
+    }
+    img {
+      display: none !important;
+      width: 30px;
+      cursor: pointer;
     }
     ul {
       display: flex;
+      justify-content: center;
       list-style-type: none;
+      height: 100%;
+      position: relative;
       li {
-        margin: 0 15px;
+        margin: 10px 15px 0;
         text-transform: capitalize;
+        cursor: pointer;
         &:hover {
-          color: red;
+          color: #fff;
+          a {
+            height: 100%;
+            width: 100%;
+            color: #fff !important;
+          }
         }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    .container {
+      img {
+        display: block !important;
+      }
+      ul {
+        display: none !important;
       }
     }
   }

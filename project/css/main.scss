@@ -1,6 +1,17 @@
 // This File Only For Calling Files
-
-// Importing
-@import "./global";
+// Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+// Importing Global Rules
+@import "./global.scss";
+// Importing Layouts
 @import "./layouts/header.scss";
+@import "./layouts/footer.scss";
+// Importing Libraries
+@import "./library/variables";
+@import "./library/mixins.scss";
 @import "./library/loading.scss";
+// Importing Pages
+@import "./pages/home.scss";
+@import "./pages/about.scss";
+@import "./pages/docs.scss";
+@import "./pages/contact.scss";
