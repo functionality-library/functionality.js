@@ -21,9 +21,9 @@
   Comming Soon
   ```
 - Or You Can Install it By CDN In Your HTML File
-```html
-<script src="Comming Soon"></script>
-```
+  ```html
+  <script src="Comming Soon"></script>
+  ```
 
 ## Importing 🦐
 
