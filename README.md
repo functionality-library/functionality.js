@@ -68,19 +68,19 @@
 
 - First Clone The Repository
 
-```cmd
-git clone https://github.com/Ali-Eldeba/functionalty.js.git
-```
+  ```cmd
+  git clone https://github.com/Ali-Eldeba/functionalty.js.git
+  ```
 
 - Then Install Packages (node_modules)
 
-```node
-npm install
-```
+  ```node
+  npm install
+  ```
 
 - Then Run The Website In Your Locahost Server
 
-```node
-gulp watch
-```
+  ```node
+  gulp watch
+  ```
 - Feel Free To Add What You Want!
