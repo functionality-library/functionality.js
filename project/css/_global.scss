@@ -1,3 +1,4 @@
+@import "./library/variables.scss";
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +6,12 @@
 }
 body {
   font-family: "Cairo", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+::selection {
+  background-color: $selection-color !important;
 }
 a {
   text-decoration: none !important;

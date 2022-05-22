@@ -1,0 +1,20 @@
+.landing {
+  background-color: #eee;
+  height: calc(100vh - 90px);
+  .coontainer {
+    height: 100%;
+    width: 100%;
+    img {
+      border-radius: 50%;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .landing .container {
+    flex-direction: column;
+    img {
+      margin-bottom: 15px;
+      width: 50px;
+    }
+  }
+}

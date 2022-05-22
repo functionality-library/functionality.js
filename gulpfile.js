@@ -9,6 +9,7 @@ var uglify = require("gulp-uglify");
 var rename = require("gulp-rename");
 var pug = require("gulp-pug");
 var livereload = require("gulp-livereload");
+var zip = require("gulp-zip");
 
 // HTML Task
 gulp.task("html", () => {
@@ -50,12 +51,18 @@ gulp.task("scripts", () => {
 
 // Functionalty.js File Task
 gulp.task("functionalty", () => {
+  livereload.listen();
   require("./server.js");
   return gulp
     .src("./project/js/functionalty.js")
     .pipe(uglify())
     .pipe(rename("functionalty.min.js"))
     .pipe(gulp.dest("./dist"));
+});
+
+// Compressing The Dist Folder For The User
+gulp.task("compress", () => {
+  return gulp.src("./dist").pipe(zip("functionalty.zip")).pipe(gulp.dest("./"));
 });
 
 // Watch Task (Main Task)
