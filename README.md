@@ -77,4 +77,9 @@ git clone https://github.com/Ali-Eldeba/functionalty.js.git
 npm install
 ```
 
+- Then Run The Website In Your Locahost Server
+
+```node
+gulp watch
+```
 - Feel Free To Add What You Want!
