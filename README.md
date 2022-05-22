@@ -57,9 +57,10 @@ import * from "functionalty.min.js";
 5. ✔️ Making File Light Weight
 6. Handling Function Errors
 7. Making A Documentation Website
-8. Adding New Functions
-9. Making npm Package For Installation
-10. Making a CDN Importing
+8. Dark And Write Theme Website
+9. Adding New Functions
+10. Making npm Package For Installation
+11. Making a CDN Importing
 
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
