@@ -30,15 +30,15 @@
 - By The Beginning You Have To Import Library After Installation,<br />
   You Can Import Unminified Version
 
-```javascript
-import * from "functionalty.js";
-```
+  ```javascript
+  import * from "functionalty.js";
+  ```
 
 - Or You Can Import Minified Version (recommended)
 
-```javascript
-import * from "functionalty.min.js";
-```
+  ```javascript
+  import * from "functionalty.min.js";
+  ```
 
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
 
