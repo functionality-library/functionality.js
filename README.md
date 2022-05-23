@@ -78,7 +78,7 @@
   npm install
   ```
 
-- Then Run The Website In Your Locahost Server
+- Run Website In Your Locahost Server With Live Reload
 
   ```node
   gulp watch
