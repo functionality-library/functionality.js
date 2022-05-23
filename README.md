@@ -52,7 +52,7 @@
 
 1. Adding Logo
 2. Converting functionalty.js File Into TypeScript File
-3. Making File Supported By All Of Search Engines
+3. ✔️ Making File Supported By All Of Search Engines
 4. ✔️ Making File Compressed
 5. ✔️ Making File Light Weight
 6. Handling Function Errors
