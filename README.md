@@ -21,24 +21,24 @@
   Comming Soon
   ```
 - Or You Can Install it By CDN In Your HTML File
-```html
-<script src="Comming Soon"></script>
-```
+  ```html
+  <script src="Comming Soon"></script>
+  ```
 
 ## Importing 🦐
 
 - By The Beginning You Have To Import Library After Installation,<br />
   You Can Import Unminified Version
 
-```javascript
-import * from "functionalty.js";
-```
+  ```javascript
+  import * from "functionalty.js";
+  ```
 
 - Or You Can Import Minified Version (recommended)
 
-```javascript
-import * from "functionalty.min.js";
-```
+  ```javascript
+  import * from "functionalty.min.js";
+  ```
 
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
 
@@ -57,9 +57,10 @@ import * from "functionalty.min.js";
 5. ✔️ Making File Light Weight
 6. Handling Function Errors
 7. Making A Documentation Website
-8. Adding New Functions
-9. Making npm Package For Installation
-10. Making a CDN Importing
+8. Dark And Write Theme Website
+9. Adding New Functions
+10. Making npm Package For Installation
+11. Making a CDN Importing
 
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
@@ -67,19 +68,19 @@ import * from "functionalty.min.js";
 
 - First Clone The Repository
 
-```cmd
-git clone https://github.com/Ali-Eldeba/functionalty.js.git
-```
+  ```cmd
+  git clone https://github.com/Ali-Eldeba/functionalty.js.git
+  ```
 
 - Then Install Packages (node_modules)
 
-```node
-npm install
-```
+  ```node
+  npm install
+  ```
 
 - Then Run The Website In Your Locahost Server
 
-```node
-gulp watch
-```
+  ```node
+  gulp watch
+  ```
 - Feel Free To Add What You Want!
