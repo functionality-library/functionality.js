@@ -45,7 +45,7 @@
 ## How To Use ❓
 
 - Now You Have Been Setup Everything
-- You Can Visit Functionalty.js Site From <a>Here</a>
+- You Can Visit Functionalty.js Site From <a href="https://functionalty.netlify.app/">Here</a>
 - Or This is A Quick Start From Here
 
 # <p align="center">Here Is What We Are Working On 🤞</p>
