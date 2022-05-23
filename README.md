@@ -64,7 +64,7 @@
 
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
-## To Get Started Contributing 🔥
+## To Get Started Contributing ☕
 
 - First Clone The Repository
 
