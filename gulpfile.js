@@ -43,6 +43,11 @@ gulp.task("scripts", () => {
       "./project/js/**/*.js",
       "!./project/js/functionalty.js",
     ])
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
     .pipe(uglify())
     .pipe(concat("main.js"))
     .pipe(gulp.dest("./website/js"))
@@ -55,6 +60,11 @@ gulp.task("functionalty", () => {
   require("./server.js");
   return gulp
     .src("./project/js/functionalty.js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
     .pipe(uglify())
     .pipe(rename("functionalty.min.js"))
     .pipe(gulp.dest("./dist"));
