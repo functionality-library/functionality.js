@@ -27,7 +27,7 @@ gulp.task("styles", () => {
   return gulp
     .src(["./project/css/*.scss", "./project/css/**/*.scss"])
     .pipe(sass())
-    .pipe(prefix("last 2 versions"))
+    .pipe(prefix("last 4 versions"))
     .pipe(concat("style.css"))
     .pipe(minify())
     .pipe(gulp.dest("./website/css"))
