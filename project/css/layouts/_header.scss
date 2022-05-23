@@ -14,9 +14,9 @@ nav {
       cursor: pointer;
       color: #000;
     }
-    img {
+    i {
       display: none !important;
-      width: 30px;
+      font-size: 25px;
       cursor: pointer;
     }
     ul {
@@ -44,7 +44,7 @@ nav {
 @media (max-width: 768px) {
   nav {
     .container {
-      img {
+      i {
         display: block !important;
       }
       ul {
