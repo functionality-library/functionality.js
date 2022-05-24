@@ -31,10 +31,10 @@
     "gulp-sourcemaps": "^1.12.1",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.1.0",
+    "jest": "^28.1.0",
     "sass": "^1.52.0"
   },
   "dependencies": {
-    "jest": "^28.1.0",
     "static-server": "^2.2.1"
   }
 }

@@ -6,6 +6,9 @@
 }
 body {
   font-family: "Cairo", sans-serif;
+  background-color: #eee;
+  height: 100vh;
+  overflow: hidden;
 }
 html {
   scroll-behavior: smooth;

@@ -3,10 +3,12 @@
   background-color: $soft-black;
   height: 30px;
   color: #fff;
-  a {
-    color: $js !important;
-    &:hover {
-      text-decoration: underline !important;
+  p {
+    a {
+      color: $js !important;
+      &:hover {
+        text-decoration: underline !important;
+      }
     }
   }
 }

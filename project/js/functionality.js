@@ -10,6 +10,8 @@ function getMid(number1, number2) {
   return Math.floor((parseFloat(number1) + parseFloat(number2)) / 2);
 }
 
+module.exports = getMid;
+
 function getFactors(number) {
   return [...Array(number + 1).keys()].filter((i) => number % i === 0);
 }
