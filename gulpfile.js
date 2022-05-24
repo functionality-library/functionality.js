@@ -100,3 +100,6 @@ gulp.task("watch", () => {
 
   gulp.watch("./project/js/functionalty.js", gulp.series("functionalty"));
 });
+
+// Setting Default Task
+// gulp.set("default", ["watch"]);
