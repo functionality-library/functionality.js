@@ -45,26 +45,26 @@
 ## How To Use ❓
 
 - Now You Have Been Setup Everything
-- You Can Visit Functionalty.js Site From <a>Here</a>
+- You Can Visit Functionalty.js Site From <a href="https://functionalty.netlify.app/">Here</a>
 - Or This is A Quick Start From Here
 
 # <p align="center">Here Is What We Are Working On 🤞</p>
 
 1. Adding Logo
 2. Converting functionalty.js File Into TypeScript File
-3. Making File Supported By All Of Search Engines
+3. ✔️ Making File Supported By All Of Search Engines
 4. ✔️ Making File Compressed
 5. ✔️ Making File Light Weight
 6. Handling Function Errors
 7. Making A Documentation Website
-8. Dark And Write Theme Website
+8. Adding Dark And White Theme In Website
 9. Adding New Functions
 10. Making npm Package For Installation
 11. Making a CDN Importing
 
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
-## To Get Started Contributing 🔥
+## To Get Started Contributing ☕
 
 - First Clone The Repository
 
@@ -78,7 +78,7 @@
   npm install
   ```
 
-- Then Run The Website In Your Locahost Server
+- Run Website In Your Locahost Server With Live Reload
 
   ```node
   gulp watch
