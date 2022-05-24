@@ -4,7 +4,7 @@
   "description": "- This Is A JavaScript Library To Make Your Work Easier/Faster,<br />\r   You Can See Functionalty.js Website From Here\r - Born In May  5 / 16 / 2022",
   "main": "functionalty.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,13 @@
     "gulp-pug": "^5.0.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^1.12.1",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.1.0",
     "sass": "^1.52.0"
   },
   "dependencies": {
+    "jest": "^28.1.0",
     "static-server": "^2.2.1"
   }
 }

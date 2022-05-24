@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var pug = require("gulp-pug");
 var livereload = require("gulp-livereload");
 var zip = require("gulp-zip");
+var sourcemaps = require("gulp-sourcemaps");
 
 // HTML Task
 gulp.task("html", () => {
@@ -26,10 +27,12 @@ gulp.task("styles", () => {
   require("./server.js");
   return gulp
     .src(["./project/css/*.scss", "./project/css/**/*.scss"])
+    .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(prefix("last 4 versions"))
     .pipe(concat("style.css"))
     .pipe(minify())
+    .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("./website/css"))
     .pipe(livereload());
 });
@@ -41,8 +44,9 @@ gulp.task("scripts", () => {
     .src([
       "./project/js/*.js",
       "./project/js/**/*.js",
-      "!./project/js/functionalty.js",
+      "!./project/js/functionality.js",
     ])
+    .pipe(sourcemaps.init())
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -50,16 +54,17 @@ gulp.task("scripts", () => {
     )
     .pipe(uglify())
     .pipe(concat("main.js"))
+    .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("./website/js"))
     .pipe(livereload());
 });
 
 // Functionalty.js File Task
-gulp.task("functionalty", () => {
+gulp.task("functionality", () => {
   livereload.listen();
   require("./server.js");
   return gulp
-    .src("./project/js/functionalty.js")
+    .src("./project/js/functionality.js")
     .pipe(
       babel({
         presets: ["@babel/env"],
@@ -93,10 +98,10 @@ gulp.task("watch", () => {
     [
       "./project/js/*.js",
       "./project/js/**/*.js",
-      "!./project/js/functionalty.js",
+      "!./project/js/functionality.js",
     ],
     gulp.series("scripts")
   );
 
-  gulp.watch("./project/js/functionalty.js", gulp.series("functionalty"));
+  gulp.watch("./project/js/functionality.js", gulp.series("functionality"));
 });
