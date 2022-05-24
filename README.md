@@ -1,4 +1,4 @@
-# <p align="center"><img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s" /> Functionalty.js (beta) <img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/></p>
+# <p align="center"><img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s" /> Functionality.js (beta) <img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/></p>
 
 <p float="right">
 <!-- License -->
@@ -31,13 +31,13 @@
   You Can Import Unminified Version
 
   ```javascript
-  import * from "functionalty.js";
+  import * from "functionality.js";
   ```
 
 - Or You Can Import Minified Version (recommended)
 
   ```javascript
-  import * from "functionalty.min.js";
+  import * from "functionality.min.js";
   ```
 
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
@@ -45,13 +45,13 @@
 ## How To Use ❓
 
 - Now You Have Been Setup Everything
-- You Can Visit Functionalty.js Site From <a href="https://functionalty.netlify.app/">Here</a>
+- You Can Visit Functionalty.js Site From Here
 - Or This is A Quick Start From Here
 
 # <p align="center">Here Is What We Are Working On 🤞</p>
 
 1. Adding Logo
-2. Converting functionalty.js File Into TypeScript File
+2. Converting functionality.js File Into TypeScript File
 3. ✔️ Making File Supported By All Of Search Engines
 4. ✔️ Making File Compressed
 5. ✔️ Making File Light Weight
@@ -69,7 +69,7 @@
 - First Clone The Repository
 
   ```cmd
-  git clone https://github.com/Ali-Eldeba/functionalty.js.git
+  git clone https://github.com/Ali-Eldeba/functionality.js.git
   ```
 
 - Then Install Packages (node_modules)
