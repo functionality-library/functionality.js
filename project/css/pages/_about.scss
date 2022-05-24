@@ -3,6 +3,12 @@
     .box {
       list-style-type: square;
       font-weight: bold;
+      a {
+        color: $js !important;
+        &:hover {
+          text-decoration: underline !important;
+        }
+      }
       li {
         padding-left: 30px;
       }
