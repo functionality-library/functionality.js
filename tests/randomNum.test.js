@@ -1,0 +1,1 @@
+const randomNum = require("../project/js/functionality.js");

@@ -6,15 +6,17 @@
  * @param {number} number2
  * @returns {number}
  */
-function getMid(number1, number2) {
-  return Math.floor((parseFloat(number1) + parseFloat(number2)) / 2);
+function getMid(number1 = 0, number2) {
+  return !number2
+    ? number1
+    : Math.floor((parseFloat(number1) + parseFloat(number2)) / 2);
 }
-
 module.exports = getMid;
 
 function getFactors(number) {
   return [...Array(number + 1).keys()].filter((i) => number % i === 0);
 }
+// module.exports = getFactors;
 
 // Randoms
 
@@ -28,10 +30,12 @@ function getFactors(number) {
 function randomNum(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
+// module.exports = randomNum;
 
 function randomBoolean() {
   return Math.random() >= 0.5;
 }
+// module.exports = randomBoolean;
 
 /**
  * Get a random element from an array
@@ -42,12 +46,14 @@ function randomBoolean() {
 function randomElementFrom(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
+// module.exports = randomElementFrom;
 
 function randomHex() {
   return `#${Math.floor(Math.random() * 0xffffff)
     .toString(16)
     .padEnd(6, "0")}`;
 }
+// module.exports = randomHex;
 
 // Arrays
 
@@ -61,6 +67,7 @@ function randomHex() {
 function filterArray(array, value) {
   return array.filter((e) => e != value);
 }
+// module.exports = filterArray;
 
 /**
  * Get sum of all numbers in array
@@ -71,6 +78,7 @@ function filterArray(array, value) {
 function sumOfArray(array) {
   return array.reduce((a, b) => a + b, 0);
 }
+// module.exports = sumOfArray;
 
 /**
    * Sort an array of numbers in ascending order
@@ -101,6 +109,7 @@ function sumOfArray(array) {
 function minArray(array) {
   return Math.min(...array); // using math.min() to get minimum value in array is faster than using a for loop
 }
+// module.exports = minArray;
 
 /**
  * Get maximum value in array
@@ -111,6 +120,7 @@ function minArray(array) {
 function maxArray(array) {
   return Math.max(...array); // using math.max() to get maximum value in array is faster than using a for loop
 }
+// module.exports = maxArray;
 
 /**
  * Remove duplicated Elemets in array
@@ -122,95 +132,103 @@ function removeDuplicate(array) {
   array.filter(function (ele, index) {
     return [...new Set(array)];
   });
-
-  // Strings
-
-  /**
-   *
-   * @param {string} word string to be reversed
-   * @returns {string}
-   */
-  function reverseString(word) {
-    return word.split("").reverse().join("");
-  }
-
-  /**
-   * Making first letter capital in the word
-   *
-   * @param {string} word
-   * @returns {string}
-   */
-  function capitalize(word) {
-    return word.charAt(0).toUpperCase() + word.slice(1);
-  }
-
-  // Numbers
-
-  /**
-   * reverse a number (e.g. 12345 -> 54321)
-   *
-   * @param {number} number
-   * @returns {number}
-   */
-  function reverseNum(number) {
-    // this code is changed from the original one because it didn't work properly when the number is decimal
-    if (number < 10 && number > -10) {
-      return number;
-    }
-    const parsedNumber = +(number > 10 ? number : number * -1)
-      .toString()
-      .split("")
-      .reverse()
-      .join("");
-    return number > 10 ? parsedNumber : parsedNumber * -1; // this code more readable than the other one also it works with decimals too
-  }
-
-  // Valid Checks
-
-  /**
-   * check if a number is even
-   *
-   * @param {number} number
-   * @returns {boolean}
-   */
-  function isEven(number) {
-    return number % 2 == 0;
-  }
-
-  /**
-   * check if a number is odd
-   *
-   * @param {number} number
-   * @returns {boolean}
-   */
-  function isOdd(number) {
-    return number % 2 != 0;
-  }
-
-  /**
-   * check if a string is a palindrome
-   *
-   * @param {string} word
-   * @returns {boolean}
-   */
-  function isPalindrome(word) {
-    return word.toString() == reverseString(word.toString());
-  }
-
-  /**
-   * check if a number is prime
-   *
-   * @param {number} number
-   * @returns {boolean}
-   */
-  function isPrime(number) {
-    // this code is changed from the original one because it was causing infinite loop
-    // when number % i never equals 0
-    for (i = 2, s = Math.sqrt(number); i <= s; i++) {
-      if (number % i === 0) {
-        return false;
-      }
-    }
-    return true;
-  }
 }
+// module.exports = removeDuplicate;
+
+// Strings
+
+/**
+ *
+ * @param {string} word string to be reversed
+ * @returns {string}
+ */
+function reverseString(word) {
+  return word.split("").reverse().join("");
+}
+// module.exports = reverseString;
+
+/**
+ * Making first letter capital in the word
+ *
+ * @param {string} word
+ * @returns {string}
+ */
+function capitalize(word) {
+  return word.charAt(0).toUpperCase() + word.slice(1);
+}
+// module.exports = capitalize;
+
+// Numbers
+
+/**
+ * reverse a number (e.g. 12345 -> 54321)
+ *
+ * @param {number} number
+ * @returns {number}
+ */
+function reverseNum(number) {
+  // this code is changed from the original one because it didn't work properly when the number is decimal
+  if (number < 10 && number > -10) {
+    return number;
+  }
+  const parsedNumber = +(number > 10 ? number : number * -1)
+    .toString()
+    .split("")
+    .reverse()
+    .join("");
+  return number > 10 ? parsedNumber : parsedNumber * -1; // this code more readable than the other one also it works with decimals too
+}
+// module.exports = reverseNum;
+
+// Valid Checks
+
+/**
+ * check if a number is even
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isEven(number) {
+  return number % 2 == 0;
+}
+// module.exports = isEven;
+
+/**
+ * check if a number is odd
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isOdd(number) {
+  return number % 2 != 0;
+}
+// module.exports = isOdd;
+
+/**
+ * check if a string is a palindrome
+ *
+ * @param {string} word
+ * @returns {boolean}
+ */
+function isPalindrome(word) {
+  return word.toString() == reverseString(word.toString());
+}
+// module.exports = isPalindrome;
+
+/**
+ * check if a number is prime
+ *
+ * @param {number} number
+ * @returns {boolean}
+ */
+function isPrime(number) {
+  // this code is changed from the original one because it was causing infinite loop
+  // when number % i never equals 0
+  for (i = 2, s = Math.sqrt(number); i <= s; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+// module.exports = isPrime;
