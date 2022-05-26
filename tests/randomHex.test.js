@@ -1,5 +1,9 @@
 const randomHex = require("../project/js/functionality/randomHex");
 
+it("always returns a string", () => {
+  expect(typeof randomHex()).toBe("string");
+});
+
 it("always returns a colour", () => {
   const colours = Array(100)
     .fill(null)

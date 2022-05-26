@@ -4,6 +4,10 @@
  * @returns {string}
  */
 function reverseString(word) {
-  return word.split("").reverse().join("");
+  if (!word || typeof word !== "string") {
+    return "";
+  } else {
+    return word.split("").reverse().join("");
+  }
 }
 module.exports = reverseString;

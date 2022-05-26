@@ -6,6 +6,9 @@
  * @returns {number}
  */
 function getMid(number1 = 0, number2) {
+  if (typeof number1 !== "number" && !number2) {
+    return 0;
+  }
   if (!number2 && typeof parseFloat(number1) === "number") {
     return number1;
   }
