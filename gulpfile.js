@@ -44,7 +44,7 @@ gulp.task("scripts", () => {
     .src([
       "./project/js/*.js",
       "./project/js/**/*.js",
-      "!./project/js/functionality.js",
+      "!./project/js/functionality/*.js",
     ])
     .pipe(sourcemaps.init())
     .pipe(
@@ -64,14 +64,14 @@ gulp.task("functionality", () => {
   livereload.listen();
   require("./server.js");
   return gulp
-    .src("./project/js/functionality.js")
+    .src("./project/js/functionality/*.js")
     .pipe(
       babel({
         presets: ["@babel/env"],
       })
     )
+    .pipe(concat("functionality.min.js"))
     .pipe(uglify())
-    .pipe(rename("functionalty.min.js"))
     .pipe(gulp.dest("./dist"));
 });
 
@@ -95,13 +95,9 @@ gulp.task("watch", () => {
   );
 
   gulp.watch(
-    [
-      "./project/js/*.js",
-      "./project/js/**/*.js",
-      "!./project/js/functionality.js",
-    ],
+    ["./project/js/*.js", "./project/js/**/*.js"],
     gulp.series("scripts")
   );
 
-  gulp.watch("./project/js/functionality.js", gulp.series("functionality"));
+  gulp.watch("./project/js/functionality/*.js", gulp.series("functionality"));
 });
