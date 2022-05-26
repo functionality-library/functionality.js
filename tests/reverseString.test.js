@@ -1,21 +1,21 @@
-const reversestring = require("../project/js/functionality/reverseString.js");
+const reverseString = require("../project/js/functionality/reverseString.js");
 
 it("always return a string", function () {
-  expect(typeof reversestring("hello")).toBe("string");
+  expect(typeof reverseString("hello")).toBe("string");
 });
 
 it("always reverse the parameter", function () {
-  expect(reversestring("hello")).toBe("olleh");
+  expect(reverseString("hello")).toBe("olleh");
 });
 
 it("returns empty string if no parameter", function () {
-  expect(reversestring()).toBe("");
+  expect(reverseString()).toBe("");
 });
 
 it("returns empty string if the parameter is not a string", function () {
-  expect(reversestring(5)).toBe("");
+  expect(reverseString(5)).toBe("");
 });
 
 it("does not matter about multiple parameters", function () {
-  expect(reversestring("hello", "world")).toBe("olleh");
+  expect(reverseString("hello", "world")).toBe("olleh");
 });

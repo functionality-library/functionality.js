@@ -5,6 +5,12 @@
  * @returns {number}
  */
 function reverseNum(number) {
+  if (number == 0 || number == -0) {
+    return 0;
+  }
+  if (!number) {
+    return "";
+  }
   // this code is changed from the original one because it didn't work properly when the number is decimal
   if (number < 10 && number > -10) {
     return number;
