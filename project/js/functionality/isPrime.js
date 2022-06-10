@@ -5,8 +5,9 @@
  * @returns {boolean}
  */
 function isPrime(number) {
-  // this code is changed from the original one because it was causing infinite loop
-  // when number % i never equals 0
+  if (typeof number !== "number") {
+    throw new TypeError('Expected a number but got ' + typeof number);
+  }
   for (i = 2, s = Math.sqrt(number); i <= s; i++) {
     if (number % i === 0) {
       return false;

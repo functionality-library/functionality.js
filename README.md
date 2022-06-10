@@ -56,7 +56,7 @@
 4. ✔️ Making File Compressed
 5. ✔️ Making File Light Weight
 6. ✔️ Testing The Library
-7. Handling Function Errors
+7. ✔️ Handling Function Errors
 8. Making A Documentation Website
 9. Adding Dark And White Theme In Website
 10. Adding New Functions
