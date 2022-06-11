@@ -1,4 +1,4 @@
-# <p align="center">Functionality.js (beta) 🫀</p>
+# <p align="center">Functionality.js (beta) 🔥</p>
 
 <p float="right">
 <!-- License -->
