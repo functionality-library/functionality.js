@@ -16,8 +16,8 @@
 ## Installation ⬇️
 
 - So To Get Started Using Functionalty.js Library,<br />
-  You Have To Install It By Node.js
-  ```node
+  You Have To Install It By npm
+  ```cmd
   Comming Soon
   ```
 - Or You Can Install it By CDN In Your HTML File
@@ -75,13 +75,13 @@
 
 - Then Install Packages (node_modules)
 
-  ```node
+  ```cmd
   npm install
   ```
 
 - Run Website In Your Locahost Server With Live Reload
 
-  ```node
+  ```cmd
   gulp watch
   ```
 
