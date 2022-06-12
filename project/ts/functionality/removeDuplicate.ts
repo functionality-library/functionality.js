@@ -2,9 +2,8 @@
  * Remove duplicated Elemets in array
  *
  * @param {any[]} array
- * @returns {array}
  */
-function removeDuplicate(array) {
+function removeDuplicate(array: any[]): void {
   if (!Array.isArray(array)) {
     throw new TypeError('Expected an array but got ' + typeof array);
   }
@@ -13,4 +12,5 @@ function removeDuplicate(array) {
   });
 }
 
-module.exports = removeDuplicate;
+// module.exports = removeDuplicate;
+export default removeDuplicate;

@@ -17,7 +17,7 @@ gulp.task("html", () => {
   require("./server.js");
   return gulp
     .src(["./project/html/*.pug", "./project/html/pages/*.pug"])
-    .pipe(pug({ pretty: false }))
+    .pipe(pug({pretty: false}))
     .pipe(gulp.dest("./website"))
     .pipe(livereload());
 });
@@ -36,7 +36,6 @@ gulp.task("styles", () => {
     .pipe(gulp.dest("./website/css"))
     .pipe(livereload());
 });
-
 // JS Tasks
 gulp.task("scripts", () => {
   require("./server.js");
@@ -44,6 +43,7 @@ gulp.task("scripts", () => {
     .src([
       "./project/js/*.js",
       "./project/js/**/*.js",
+      "!./project/js/functionality/*.ts",
       "!./project/js/functionality/*.js",
     ])
     .pipe(sourcemaps.init())
@@ -60,19 +60,35 @@ gulp.task("scripts", () => {
 });
 
 // Functionalty.js File Task
+// var ts = require("gulp-typescript");
+// var tsProject = ts.createProject("tsconfig.json");
+
 gulp.task("functionality", () => {
+  var browserify = require("browserify");
+  var source = require("vinyl-source-stream");
+  var tsify = require("tsify");
+  var sourcemaps = require("gulp-sourcemaps");
+  var buffer = require("vinyl-buffer");
+
   livereload.listen();
   require("./server.js");
-  return gulp
-    .src("./project/js/functionality/*.js")
-    .pipe(
-      babel({
-        presets: ["@babel/env"],
-      })
-    )
-    .pipe(concat("functionality.min.js"))
+  return browserify({
+    basedir: ".",
+    debug: true,
+    entries: ["project/ts/functionality/main.ts"],
+    cache: {},
+    packageCache: {},
+  })
+    .plugin(tsify)
+    .transform("babelify", {
+      presets: ["es2015"],
+      extensions: [".ts"],
+    })
+    .bundle()
+    .pipe(source("functionality.min.js"))
+    .pipe(buffer())
     .pipe(uglify())
-    .pipe(gulp.dest("./dist"));
+    .pipe(gulp.dest("dist"));
 });
 
 // Compressing The Dist Folder For The User
@@ -99,5 +115,5 @@ gulp.task("watch", () => {
     gulp.series("scripts")
   );
 
-  gulp.watch("./project/js/functionality/*.js", gulp.series("functionality"));
+  gulp.watch("./project/ts/functionality/*.ts", gulp.series("functionality"));
 });

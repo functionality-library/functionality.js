@@ -3,7 +3,7 @@
  * @param {string} word string to be reversed
  * @returns {string}
  */
-function reverseString(word) {
+function reverseString(word: string): string {
   if (typeof word !== "string") {
     throw new TypeError('Expected a string but got ' + typeof word);
   }
@@ -13,4 +13,5 @@ function reverseString(word) {
     return word.split("").reverse().join("");
   }
 }
-module.exports = reverseString;
+// module.exports = reverseString;
+export default reverseString;
