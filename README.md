@@ -1,4 +1,4 @@
-# <p align="center"><img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s" /> Functionality.js (beta) <img width="20px" src="https://media1.giphy.com/media/ln7z2eWriiQAllfVcn/giphy.gif?cid=790b76115cd5f2f3ebd0a1aeb3ae5c75cbf7bc3c9a1bd77b&rid=giphy.gif&ct=s"/></p>
+# <p align="center">Functionality.js (beta) 🔥</p>
 
 <p float="right">
 <!-- License -->
@@ -16,8 +16,8 @@
 ## Installation ⬇️
 
 - So To Get Started Using Functionalty.js Library,<br />
-  You Have To Install It By Node.js
-  ```node
+  You Have To Install It By npm
+  ```cmd
   Comming Soon
   ```
 - Or You Can Install it By CDN In Your HTML File
@@ -51,12 +51,12 @@
 # <p align="center">Here Is What We Are Working On 🤞</p>
 
 1. Adding Logo
-2. Converting functionality.js File Into TypeScript File
+2. ✔️ Converting Library Into TypeScript
 3. ✔️ Making File Supported By All Of Search Engines
 4. ✔️ Making File Compressed
 5. ✔️ Making File Light Weight
 6. ✔️ Testing The Library
-7. Handling Function Errors
+7. ✔️ Handling Function Errors
 8. Making A Documentation Website
 9. Adding Dark And White Theme In Website
 10. Adding New Functions
@@ -75,13 +75,13 @@
 
 - Then Install Packages (node_modules)
 
-  ```node
+  ```cmd
   npm install
   ```
 
 - Run Website In Your Locahost Server With Live Reload
 
-  ```node
+  ```cmd
   gulp watch
   ```
 

@@ -8,5 +8,5 @@ var server = new StaticServer({
 });
 
 server.start(function () {
-  console.log("Server Started Please Go To: loacalhost:" + server.port);
+  console.log("Server Started Please Go To: localhost:" + server.port);
 });

@@ -4,14 +4,13 @@
  * @param {number} number
  * @returns {number}
  */
-function reverseNum(number) {
+function reverseNum(number: number): number {
+  if (typeof number !== "number") {
+    throw new TypeError('Expected a number but got ' + typeof number);
+  }
   if (number == 0 || number == -0) {
     return 0;
   }
-  if (!number) {
-    return "";
-  }
-  // this code is changed from the original one because it didn't work properly when the number is decimal
   if (number < 10 && number > -10) {
     return number;
   }
@@ -22,4 +21,5 @@ function reverseNum(number) {
     .join("");
   return number > 10 ? parsedNumber : parsedNumber * -1; // this code more readable than the other one also it works with decimals too
 }
-module.exports = reverseNum;
+// module.exports = reverseNum;
+export default reverseNum;
