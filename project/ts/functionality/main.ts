@@ -16,6 +16,7 @@ import randomNum from "./randomNum";
 import removeDuplicate from "./removeDuplicate";
 import reverseString from "./reverseString";
 import reverseNum from "./reverseNum";
+import shuffle from "./shuffle";
 
 const functionality = {
   sumOfArray,
@@ -36,6 +37,7 @@ const functionality = {
   removeDuplicate,
   reverseString,
   reverseNum,
+  shuffle,
 };
 
 declare global {
