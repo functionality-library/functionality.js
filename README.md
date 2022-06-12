@@ -3,6 +3,8 @@
 <p float="right">
 <!-- License -->
 <img src="https://img.shields.io/github/license/Ali-Eldeba/functionalty.js" />
+<!-- Stars -->
+ <img src="https://img.shields.io/github/stars/Ali-Eldeba/functionality.js" />
 <!-- Node Version -->
 <img src="https://img.shields.io/badge/node-16.15.1-red" />
 </p>
