@@ -6,7 +6,7 @@
  */
 function isPrime(number: number): boolean {
   if (typeof number !== "number") {
-    throw new TypeError('Expected a number but got ' + typeof number);
+    throw new TypeError("Expected a number but got " + typeof number);
   }
   for (let i = 2, s = Math.sqrt(number); i <= s; i++) {
     if (number % i === 0) {

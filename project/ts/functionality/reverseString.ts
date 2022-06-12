@@ -5,7 +5,7 @@
  */
 function reverseString(word: string): string {
   if (typeof word !== "string") {
-    throw new TypeError('Expected a string but got ' + typeof word);
+    throw new TypeError("Expected a string but got " + typeof word);
   }
   if (!word || typeof word !== "string") {
     return "";

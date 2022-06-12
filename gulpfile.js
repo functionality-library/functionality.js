@@ -11,13 +11,18 @@ var pug = require("gulp-pug");
 var livereload = require("gulp-livereload");
 var zip = require("gulp-zip");
 var sourcemaps = require("gulp-sourcemaps");
+var browserify = require("browserify");
+var source = require("vinyl-source-stream");
+var tsify = require("tsify");
+var sourcemaps = require("gulp-sourcemaps");
+var buffer = require("vinyl-buffer");
 
 // HTML Task
 gulp.task("html", () => {
   require("./server.js");
   return gulp
     .src(["./project/html/*.pug", "./project/html/pages/*.pug"])
-    .pipe(pug({pretty: false}))
+    .pipe(pug({ pretty: false }))
     .pipe(gulp.dest("./website"))
     .pipe(livereload());
 });
@@ -59,17 +64,11 @@ gulp.task("scripts", () => {
     .pipe(livereload());
 });
 
-// Functionalty.js File Task
 // var ts = require("gulp-typescript");
 // var tsProject = ts.createProject("tsconfig.json");
 
+// Main Library Task
 gulp.task("functionality", () => {
-  var browserify = require("browserify");
-  var source = require("vinyl-source-stream");
-  var tsify = require("tsify");
-  var sourcemaps = require("gulp-sourcemaps");
-  var buffer = require("vinyl-buffer");
-
   livereload.listen();
   require("./server.js");
   return browserify({
