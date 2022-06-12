@@ -51,7 +51,7 @@
 # <p align="center">Here Is What We Are Working On 🤞</p>
 
 1. Adding Logo
-2. Converting functionality.js File Into TypeScript File
+2. ✔️ Converting Library Into TypeScript
 3. ✔️ Making File Supported By All Of Search Engines
 4. ✔️ Making File Compressed
 5. ✔️ Making File Light Weight
