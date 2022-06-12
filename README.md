@@ -34,31 +34,15 @@
 - By The Beginning You Have To Import Library After Installation,<br />
   You Can Import Unminified Version
 
-  ```javascript
-  import * from "functionality.js";
+  ```html
+  <script src="path/to/functionality.js/dist/functionality.js"></script>
   ```
 
 - Or You Can Import Minified Version (recommended)
 
-  ```javascript
-  import * from "functionality.min.ts";
+  ```html
+  <script src="path/to/functionality.js/dist/functionality.min.js"></script>
   ```
-  
-### TypeScript 💙
-  
-- By The Beginning You Have To Import Library After Installation,<br />
-  You Can Import Unminified Version
-
-  ```typescript
-  import * from "functionality.ts";
-  ```
-
-- Or You Can Import Minified Version (recommended)
-
-  ```typescript
-  import * from "functionality.min.js";
-  ```
-  
 
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
 
