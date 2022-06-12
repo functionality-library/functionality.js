@@ -5,6 +5,6 @@
  * @returns {boolean}
  */
 function isPalindrome(word) {
-  return word.toString() == reverseString(word.toString());
+  return !word ? "" : word.toString() == word.toString().split("").reverse().join("");
 }
 module.exports = isPalindrome;
