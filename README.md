@@ -4,7 +4,7 @@
 <!-- License -->
 <img src="https://img.shields.io/github/license/Ali-Eldeba/functionalty.js" />
 <!-- Node Version -->
-<img src="https://img.shields.io/badge/Node-v13.14.0-red" />
+<img src="https://img.shields.io/badge/node-16.15.1-red" />
 </p>
 
 ## About ✍️
