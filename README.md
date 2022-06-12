@@ -42,7 +42,7 @@
   import * from "functionality.min.ts";
   ```
   
-  ### TypeScript 💙
+### TypeScript 💙
   
 - By The Beginning You Have To Import Library After Installation,<br />
   You Can Import Unminified Version
