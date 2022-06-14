@@ -1,0 +1,6 @@
+- Arrays
+  - zip
+- Strings
+- Numbers
+- Numbers
+- randoms
