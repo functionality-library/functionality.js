@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest --watchAll",
     "dev": "node server.js",
+    "start": "vite build",
     "build-npm": "tsc --project tsconfig.npm.json"
   },
   "repository": {
