@@ -86,7 +86,7 @@
 - Run Website In Your Locahost Server With Live Reload
 
   ```cmd
-  gulp watch
+  vite build
   ```
 
 - Feel Free To Add What You Want!
