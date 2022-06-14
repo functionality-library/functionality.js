@@ -1,10 +1,10 @@
 /**
- * reverse a number (e.g. 12345 -> 54321)
+ * reverse a number (e.g. 12345 -> 54321 or -12345 -> -54321)
  *
  * @param {number} number
  * @returns {number}
  */
-function reverseNum(number: number): number {
+export default function reverseNum(number: number): number {
   if (typeof number !== "number") {
     throw new TypeError("Expected a number but got " + typeof number);
   }
@@ -21,5 +21,3 @@ function reverseNum(number: number): number {
     .join("");
   return number > 10 ? parsedNumber : parsedNumber * -1; // this code more readable than the other one also it works with decimals too
 }
-// module.exports = reverseNum;
-export default reverseNum;

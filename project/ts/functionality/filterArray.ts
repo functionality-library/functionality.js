@@ -5,11 +5,9 @@
  * @param {any} value
  * @returns {any[]}
  */
-function filterArray(array: any[], value: any): any[] {
+export default function filterArray(array: any[], value: any): any[] {
   if (!Array.isArray(array)) {
     throw new TypeError("Expected an array but got " + typeof array);
   }
   return array.filter((e) => e != value);
 }
-// module.exports = filterArray;
-export default filterArray;

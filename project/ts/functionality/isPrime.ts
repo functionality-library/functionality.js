@@ -4,7 +4,7 @@
  * @param {number} number
  * @returns {boolean}
  */
-function isPrime(number: number): boolean {
+export default function isPrime(number: number): boolean {
   if (typeof number !== "number") {
     throw new TypeError("Expected a number but got " + typeof number);
   }
@@ -15,5 +15,3 @@ function isPrime(number: number): boolean {
   }
   return true;
 }
-// module.exports = isPrime;
-export default isPrime;

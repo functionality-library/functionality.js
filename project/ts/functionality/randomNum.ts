@@ -1,11 +1,11 @@
 /**
  * Generate a random number
  *
- * @param {number} start
- * @param {number} end
+ * @param {number} min
+ * @param {number} max
  * @returns {number}
  */
-function randomNum(min: number, max: number): number {
+export default function randomNum(min: number, max: number): number {
   if (typeof min !== "number" || typeof max !== "number") {
     throw new TypeError(
       "Expected numbers but got " + typeof min + " and " + typeof max
@@ -13,6 +13,3 @@ function randomNum(min: number, max: number): number {
   }
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
-
-// module.exports = randomNum;
-export default randomNum;

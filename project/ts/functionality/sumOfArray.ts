@@ -4,7 +4,7 @@
  * @param {number[]} array array of numbers
  * @returns {number} sum of all numbers in array
  */
-function sumOfArray(array: number[]): number {
+export default function sumOfArray(array: number[]): number {
   if (!Array.isArray(array) || array.some((ele) => typeof ele !== "number")) {
     throw new TypeError(
       "Expected an array of numbers but got " +
@@ -13,5 +13,3 @@ function sumOfArray(array: number[]): number {
   }
   return array.reduce((a, b) => a + b, 0);
 }
-// module.exports = sumOfArray;
-export default sumOfArray;

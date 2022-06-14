@@ -5,7 +5,7 @@
  * @param {number} number2
  * @returns {number}
  */
-function getMid(number1: number = 0, number2: number): number {
+export default function getMid(number1: number = 0, number2: number): number {
   if (typeof number1 !== "number" && !number2) {
     return 0;
   }
@@ -17,5 +17,3 @@ function getMid(number1: number = 0, number2: number): number {
   }
   return Math.floor((+number1 + +number2) / 2);
 }
-// module.exports = getMid;
-export default getMid;
