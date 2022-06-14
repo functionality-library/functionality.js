@@ -1,5 +1,5 @@
 /**
- * Get a random number
+ * Generate a random number
  *
  * @param {number} start
  * @param {number} end

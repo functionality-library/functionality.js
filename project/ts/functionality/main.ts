@@ -17,6 +17,10 @@ import removeDuplicate from "./removeDuplicate";
 import reverseString from "./reverseString";
 import reverseNum from "./reverseNum";
 import shuffle from "./shuffle";
+import randomString from "./randomString";
+import randomColor from "./randomColor";
+import randomHsl from "./randomHsl";
+import isHappyNumber from "./isHappyNumber";
 
 const functionality = {
   sumOfArray,
@@ -38,6 +42,10 @@ const functionality = {
   reverseString,
   reverseNum,
   shuffle,
+  randomString,
+  randomColor,
+  randomHsl,
+  isHappyNumber,
 };
 
 declare global {
