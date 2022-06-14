@@ -1,4 +1,4 @@
-import functionality from "./main";
+import functionality from "../main";
 /**
  * check if a string is a palindrome
  *
