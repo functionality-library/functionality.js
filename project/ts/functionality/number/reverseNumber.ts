@@ -8,7 +8,7 @@ export default function reverseNumber(number: number): number {
   if (typeof number !== "number") {
     throw new TypeError("Expected a number but got " + typeof number);
   }
-  if (number == 0 || number == -0) {
+  if (number == 0) {
     return 0;
   }
   if (number < 10 && number > -10) {
