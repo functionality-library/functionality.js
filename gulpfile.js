@@ -11,18 +11,13 @@ var pug = require("gulp-pug");
 var livereload = require("gulp-livereload");
 var zip = require("gulp-zip");
 var sourcemaps = require("gulp-sourcemaps");
-var browserify = require("browserify");
-var source = require("vinyl-source-stream");
-var tsify = require("tsify");
-var sourcemaps = require("gulp-sourcemaps");
-var buffer = require("vinyl-buffer");
 
 // HTML Task
 gulp.task("html", () => {
   require("./server.js");
   return gulp
     .src(["./project/html/*.pug", "./project/html/pages/*.pug"])
-    .pipe(pug({ pretty: false }))
+    .pipe(pug({pretty: false}))
     .pipe(gulp.dest("./website"))
     .pipe(livereload());
 });
@@ -64,11 +59,17 @@ gulp.task("scripts", () => {
     .pipe(livereload());
 });
 
+// Functionalty.js File Task
 // var ts = require("gulp-typescript");
 // var tsProject = ts.createProject("tsconfig.json");
 
-// Main Library Task
 gulp.task("functionality", () => {
+  var browserify = require("browserify");
+  var source = require("vinyl-source-stream");
+  var tsify = require("tsify");
+  var sourcemaps = require("gulp-sourcemaps");
+  var buffer = require("vinyl-buffer");
+
   livereload.listen();
   require("./server.js");
   return browserify({
@@ -88,6 +89,13 @@ gulp.task("functionality", () => {
     .pipe(buffer())
     .pipe(uglify())
     .pipe(gulp.dest("dist"));
+});
+gulp.task("functionality.npm-lib", () => {
+  var ts = require("gulp-typescript");
+  var tsProject = ts.createProject("tsconfig.npm.json");
+
+  livereload.listen();
+  return tsProject.src().pipe(tsProject()).js.pipe(gulp.dest("lib"));
 });
 
 // Compressing The Dist Folder For The User
@@ -114,5 +122,6 @@ gulp.task("watch", () => {
     gulp.series("scripts")
   );
 
-  gulp.watch("./project/ts/functionality/*.ts", gulp.series("functionality"));
+  gulp.watch("./project/ts/functionality/**/*.ts", gulp.series("functionality"));
+  gulp.watch("./project/ts/functionality/**/*.ts", gulp.series("functionality.npm-lib"));
 });

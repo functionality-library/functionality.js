@@ -22,39 +22,32 @@ import randomColor from "./colors/randomColor";
 import randomHsl from "./colors/randomHsl";
 import isHappyNumber from "./number/isHappyNumber";
 import randomPassword from "./string/randomPassword";
-
 const functionality = {
-  sumOfArray,
-  capitalize,
-  filterArray,
-  getFactors,
-  getMid,
-  isEven,
-  isOdd,
-  isPrime,
-  isPalindrome,
-  maxArray,
-  minArray,
-  randomBoolean,
-  randomElementFrom,
-  randomHex,
-  randomNumber,
-  removeDuplicate,
-  reverseString,
-  reverseNumber,
-  shuffle,
-  randomString,
-  randomColor,
-  randomHsl,
-  isHappyNumber,
-  randomPassword,
+    sumOfArray,
+    capitalize,
+    filterArray,
+    getFactors,
+    getMid,
+    isEven,
+    isOdd,
+    isPrime,
+    isPalindrome,
+    maxArray,
+    minArray,
+    randomBoolean,
+    randomElementFrom,
+    randomHex,
+    randomNumber,
+    removeDuplicate,
+    reverseString,
+    reverseNumber,
+    shuffle,
+    randomString,
+    randomColor,
+    randomHsl,
+    isHappyNumber,
+    randomPassword,
 };
-
-declare global {
-  interface Window {
-    functionality: typeof functionality;
-  }
-}
 window.functionality = functionality;
 // export * from "./sumOfArray";
 export default functionality;
