@@ -86,7 +86,7 @@
 - Run Website In Your Locahost Server With Live Reload
 
   ```cmd
-  vite build
+  npm start
   ```
 
 - Feel Free To Add What You Want!
