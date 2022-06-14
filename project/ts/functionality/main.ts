@@ -12,7 +12,7 @@ import minArray from "./minArray";
 import randomBoolean from "./randomBoolean";
 import randomElementFrom from "./randomElementFrom";
 import randomHex from "./randomHex";
-import randomNum from "./randomNum";
+import randomNumber from "./randomNumber";
 import removeDuplicate from "./removeDuplicate";
 import reverseString from "./reverseString";
 import reverseNum from "./reverseNum";
@@ -38,7 +38,7 @@ const functionality = {
   randomBoolean,
   randomElementFrom,
   randomHex,
-  randomNum,
+  randomNumber,
   removeDuplicate,
   reverseString,
   reverseNum,

@@ -5,7 +5,7 @@
  * @param {number} max
  * @returns {number}
  */
-export default function randomNum(min: number, max: number): number {
+export default function randomNumber(min: number, max: number): number {
   if (typeof min !== "number" || typeof max !== "number") {
     throw new TypeError(
       "Expected numbers but got " + typeof min + " and " + typeof max
