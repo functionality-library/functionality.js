@@ -15,7 +15,7 @@ import randomHex from "./randomHex";
 import randomNumber from "./randomNumber";
 import removeDuplicate from "./removeDuplicate";
 import reverseString from "./reverseString";
-import reverseNum from "./reverseNum";
+import reverseNumber from "./reverseNumber";
 import shuffle from "./shuffle";
 import randomString from "./randomString";
 import randomColor from "./randomColor";
@@ -41,7 +41,7 @@ const functionality = {
   randomNumber,
   removeDuplicate,
   reverseString,
-  reverseNum,
+  reverseNumber,
   shuffle,
   randomString,
   randomColor,
