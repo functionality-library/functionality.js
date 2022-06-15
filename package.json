@@ -1,8 +1,9 @@
 {
   "name": "functionality.js",
-  "version": "3.2.0",
+  "entry": "index.js",
+  "version": "3.2.1",
   "description": "- This Is A JavaScript Library To Make Your Work Easier/Faster,<br />\r   You Can See Functionalty.js Website From Here\r - Born In May  5 / 16 / 2022",
-  "main": "functionalty.js",
+  "main": "index.js",
   "scripts": {
     "test": "jest --watchAll",
     "dev": "node server.js",
