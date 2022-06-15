@@ -23,8 +23,19 @@
   npm install functionality.js
   ```
 - Or You Can Install it By CDN In Your HTML File
+
   ```html
-  <script src="https://cdn.jsdelivr.net/npm/functionality.js@latest/dist/functionality.min.js"></script>
+  <body>
+    <h1></h1>
+    <p></p>
+    <script src="https://cdn.jsdelivr.net/npm/functionality.js@latest/dist/functionality.min.js"></script>
+    <script>
+      heading = document.querySelector("h1");
+      number = document.querySelector("p");
+      heading.innerText = functionality.capitalize("hello");
+      number.innerText = functionality.randomNumber(1, 100);
+    </script>
+  </body>
   ```
 
 ## Importing 🦐
