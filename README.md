@@ -65,9 +65,9 @@
 7. ✔️ Handling Function Errors
 8. Making A Documentation Website
 9. Adding Dark And White Theme In Website
-10. Adding New Functions
-11. Making npm Package For Installation
-12. Making a CDN Importing
+10. ✔️ Adding New Functions
+11. ✔️ Making npm Package For Installation
+12. ✔️ Making a CDN Importing
 
 # <p align="center">Feel Free To Contribute To This Repositry 🤝</p>
 
