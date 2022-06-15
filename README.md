@@ -20,11 +20,11 @@
 - So To Get Started Using Functionalty.js Library,<br />
   You Have To Install It By npm
   ```cmd
-  Comming Soon
+  npm install functionality.js
   ```
 - Or You Can Install it By CDN In Your HTML File
   ```html
-  <script src="Comming Soon"></script>
+  <script src="https://cdn.jsdelivr.net/npm/functionality.js@latest/dist/functionality.min.js"></script>
   ```
 
 ## Importing 🦐
@@ -33,6 +33,8 @@
 
 - By The Beginning You Have To Import Library After Installation,<br />
   You Can Import Unminified Version
+
+- This is a Guid to how to import in HTML
 
   ```html
   <script src="path/to/functionality.js/dist/functionality.js"></script>
