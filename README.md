@@ -25,6 +25,9 @@
 - Or You Can Install it By CDN In Your HTML File
 
   ```html
+  <script src="https://cdn.jsdelivr.net/npm/functionality.js@latest/dist/functionality.min.js"></script>
+  ```
+  ```html
   <body>
     <h1></h1>
     <p></p>
