@@ -48,16 +48,8 @@
 - By The Beginning You Have To Import Library After Installation,<br />
   You Can Import Unminified Version
 
-- This is a Guid to how to import in HTML
-
   ```html
-  <script src="path/to/functionality.js/dist/functionality.js"></script>
-  ```
-
-- Or You Can Import Minified Version (recommended)
-
-  ```html
-  <script src="path/to/functionality.js/dist/functionality.min.js"></script>
+  import functionality from "functionality.js/lib/main";
   ```
 
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
