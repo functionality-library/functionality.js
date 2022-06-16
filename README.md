@@ -1,12 +1,14 @@
+<p align="center"><img width="150px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" /></p>
+
 # <p align="center">Functionality.js (beta) 🔥</p>
 
 <p float="right">
 <!-- License -->
-<img src="https://img.shields.io/github/license/Ali-Eldeba/functionalty.js" />
+<img src="https://img.shields.io/github/license/Ali-Eldeba/functionalty.js?style=for-the-badge" />
 <!-- Stars -->
- <img src="https://img.shields.io/github/stars/Ali-Eldeba/functionality.js" />
+ <img src="https://img.shields.io/github/stars/Ali-Eldeba/functionality.js?style=for-the-badge" />
 <!-- Node Version -->
-<img src="https://img.shields.io/badge/node-16.15.1-red" />
+<img src="https://img.shields.io/badge/node-16.15.1-red?style=for-the-badge" />
 </p>
 
 ## About ✍️
