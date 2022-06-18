@@ -1,6 +1,6 @@
 <p align="center"><img width="300px" src="https://i.ibb.co/f03pXV1/js.png" /></p>
 
-# <p align="center">Functionality.js (beta) 🔥</p>
+# <p align="center">Functionality.js</p>
 
 <p float="right">
 <!-- License -->
