@@ -22,6 +22,8 @@ import randomColor from "./randoms/randomColor";
 import randomHsl from "./randoms/randomHsl";
 import isHappyNumber from "./numbers/isHappyNumber";
 import randomPassword from "./randoms/randomPassword";
+import rgbToHex from "./strings/rgbToHex";
+import hexToRgb from "./strings/hexToRgb";
 declare const functionality: {
     sumOfArray: typeof sumOfArray;
     capitalize: typeof capitalize;
@@ -47,6 +49,8 @@ declare const functionality: {
     randomHsl: typeof randomHsl;
     isHappyNumber: typeof isHappyNumber;
     randomPassword: typeof randomPassword;
+    rgbToHex: typeof rgbToHex;
+    hexToRgb: typeof hexToRgb;
 };
 declare global {
     interface Window {
