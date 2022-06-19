@@ -22,8 +22,9 @@ import randomColor from "./randoms/randomColor";
 import randomHsl from "./randoms/randomHsl";
 import isHappyNumber from "./numbers/isHappyNumber";
 import randomPassword from "./randoms/randomPassword";
-import rgbToHex from "./strings/rgbToHex";
-import hexToRgb from "./strings/hexToRgb";
+import rgbToHex from "./converts/rgbToHex";
+import hexToRgb from "./converts/hexToRgb";
+import hexToHsl from "./converts/hexToHsl";
 
 const functionality = {
   sumOfArray,
@@ -52,6 +53,7 @@ const functionality = {
   randomPassword,
   rgbToHex,
   hexToRgb,
+  hexToHsl,
 };
 
 declare global {
