@@ -21,10 +21,16 @@
 
 - So To Get Started Using Functionalty.js Library,<br />
   You Have To Install It By npm
-  ```cmd
+  ```sh
   npm install functionality.js
   ```
-- Or You Can Install it By CDN In Your HTML File
+- Or You Can Install it By yarn In Your HTML File
+
+  ```sh
+  yarn add functionality.js
+  ```
+  
+- Or Even You Can Get it By CDN
 
   ```html
   <script src="https://cdn.jsdelivr.net/npm/functionality.js@latest/dist/functionality.min.js"></script>
