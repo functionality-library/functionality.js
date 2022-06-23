@@ -1,1 +1,2 @@
-export {default as functionality} from './lib/main.js';
+import functionality from './lib/main.js';
+export default functionality
