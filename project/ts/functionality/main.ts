@@ -22,6 +22,21 @@ import randomColor from "./randoms/randomColor";
 import randomHsl from "./randoms/randomHsl";
 import isHappyNumber from "./numbers/isHappyNumber";
 import randomPassword from "./randoms/randomPassword";
+import rgbToHex from "./converts/rgbToHex";
+import hexToRgb from "./converts/hexToRgb";
+import rgbToHsl from "./converts/rgbToHsl";
+// import hexToHsl from "./converts/hexToHsl";
+// import hslToHex from "./converts/hslToHex";
+// import hslToRgb from "./converts/hslToRgb";
+import removeInnerSpace from "./strings/removeInnerSpace";
+import getBrowser from "./user/getBrowser";
+import getMonths from "./user/getMonths";
+import getWeeks from "./user/getWeeks";
+import getDays from "./user/getDays";
+import getHours from "./user/getHours";
+import getMinutes from "./user/getMinutes";
+import getSeconds from "./user/getSeconds";
+import select from "./dom/select";
 
 const functionality = {
   sumOfArray,
@@ -48,6 +63,18 @@ const functionality = {
   randomHsl,
   isHappyNumber,
   randomPassword,
+  rgbToHex,
+  hexToRgb,
+  rgbToHsl,
+  removeInnerSpace,
+  getBrowser,
+  getMonths,
+  getWeeks,
+  getDays,
+  getHours,
+  getSeconds,
+  getMinutes,
+  select,
 };
 
 declare global {
@@ -56,5 +83,4 @@ declare global {
   }
 }
 window.functionality = functionality;
-// export * from "./sumOfArray";
 export default functionality;

@@ -22,6 +22,18 @@ import randomColor from "./randoms/randomColor";
 import randomHsl from "./randoms/randomHsl";
 import isHappyNumber from "./numbers/isHappyNumber";
 import randomPassword from "./randoms/randomPassword";
+import rgbToHex from "./converts/rgbToHex";
+import hexToRgb from "./converts/hexToRgb";
+import rgbToHsl from "./converts/rgbToHsl";
+import removeInnerSpace from "./strings/removeInnerSpace";
+import getBrowser from "./user/getBrowser";
+import getMonths from "./user/getMonths";
+import getWeeks from "./user/getWeeks";
+import getDays from "./user/getDays";
+import getHours from "./user/getHours";
+import getMinutes from "./user/getMinutes";
+import getSeconds from "./user/getSeconds";
+import select from "./dom/select";
 declare const functionality: {
     sumOfArray: typeof sumOfArray;
     capitalize: typeof capitalize;
@@ -47,6 +59,18 @@ declare const functionality: {
     randomHsl: typeof randomHsl;
     isHappyNumber: typeof isHappyNumber;
     randomPassword: typeof randomPassword;
+    rgbToHex: typeof rgbToHex;
+    hexToRgb: typeof hexToRgb;
+    rgbToHsl: typeof rgbToHsl;
+    removeInnerSpace: typeof removeInnerSpace;
+    getBrowser: typeof getBrowser;
+    getMonths: typeof getMonths;
+    getWeeks: typeof getWeeks;
+    getDays: typeof getDays;
+    getHours: typeof getHours;
+    getSeconds: typeof getSeconds;
+    getMinutes: typeof getMinutes;
+    select: typeof select;
 };
 declare global {
     interface Window {
