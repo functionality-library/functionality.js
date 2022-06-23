@@ -1,9 +1,10 @@
 /**
+ * Converts RGB Color To HSL
  *
- * @param r
- * @param g
- * @param b
- * @returns
+ * @param {number} r
+ * @param {number} g
+ * @param {number} b
+ * @returns {number[]}
  */
 export default function rgbToHsl(r: number, g: number, b: number): number[] {
   (r /= 255), (g /= 255), (b /= 255);

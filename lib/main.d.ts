@@ -25,6 +25,7 @@ import randomPassword from "./randoms/randomPassword";
 import rgbToHex from "./converts/rgbToHex";
 import hexToRgb from "./converts/hexToRgb";
 import rgbToHsl from "./converts/rgbToHsl";
+import hslToRgb from "./converts/hslToRgb";
 import removeInnerSpace from "./strings/removeInnerSpace";
 import getBrowser from "./user/getBrowser";
 import getMonths from "./user/getMonths";
@@ -62,6 +63,7 @@ declare const functionality: {
     rgbToHex: typeof rgbToHex;
     hexToRgb: typeof hexToRgb;
     rgbToHsl: typeof rgbToHsl;
+    hslToRgb: typeof hslToRgb;
     removeInnerSpace: typeof removeInnerSpace;
     getBrowser: typeof getBrowser;
     getMonths: typeof getMonths;
