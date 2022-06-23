@@ -57,7 +57,7 @@
   You Can Import Unminified Version
 
   ```html
-  import functionality from "functionality.js/lib/main";
+  import functionality from "functionality.js";
   ```
 
 - Since You Have Downloaded And Imported The Library You Can Use It As Following ...
@@ -74,19 +74,19 @@
 
 - First Clone The Repository
 
-  ```cmd
+  ```sh
   git clone https://github.com/Ali-Eldeba/functionality.js.git
   ```
 
 - Then Install Packages (node_modules)
 
-  ```cmd
+  ```sh
   npm install
   ```
 
 - Run Website In Your Locahost Server With Live Reload
 
-  ```cmd
+  ```sh
   npm start
   ```
 
