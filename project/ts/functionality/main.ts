@@ -25,9 +25,9 @@ import randomPassword from "./randoms/randomPassword";
 import rgbToHex from "./converts/rgbToHex";
 import hexToRgb from "./converts/hexToRgb";
 import rgbToHsl from "./converts/rgbToHsl";
-// import hexToHsl from "./converts/hexToHsl";
+import hexToHsl from "./converts/hexToHsl";
 // import hslToHex from "./converts/hslToHex";
-// import hslToRgb from "./converts/hslToRgb";
+import hslToRgb from "./converts/hslToRgb";
 import removeInnerSpace from "./strings/removeInnerSpace";
 import getBrowser from "./user/getBrowser";
 import getMonths from "./user/getMonths";
@@ -66,6 +66,8 @@ const functionality = {
   rgbToHex,
   hexToRgb,
   rgbToHsl,
+  hslToRgb,
+  hexToHsl,
   removeInnerSpace,
   getBrowser,
   getMonths,

@@ -1,42 +1,35 @@
-// // Convert hex to RGB first
-// export default function hexToHsl(hex: string) {
-//   // Convert hex to RGB first
-//   let r, g, b;
-//   if (hex.length === 4) {
-//     r = "0x" + hex[1] + hex[1];
-//     g = "0x" + hex[2] + hex[2];
-//     b = "0x" + hex[3] + hex[3];
-//   } else if (hex.length === 7) {
-//     r = "0x" + hex[1] + hex[2];
-//     g = "0x" + hex[3] + hex[4];
-//     b = "0x" + hex[5] + hex[6];
-//   }
-//   // Then to HSL
-//   r /= 255;
-//   g /= 255;
-//   b /= 255;
-//   let cmin = Math.min(r, g, b),
-//     cmax = Math.max(r, g, b),
-//     delta = cmax - cmin,
-//     h = 0,
-//     s = 0,
-//     l = 0;
-
-//   if (delta === 0) h = 0;
-//   else if (cmax === r) h = ((g - b) / delta) % 6;
-//   else if (cmax === g) h = (b - r) / delta + 2;
-//   else h = (r - g) / delta + 4;
-
-//   h = Math.round(h * 60);
-
-//   if (h < 0) h += 360;
-
-//   l = (cmax + cmin) / 2;
-//   s = delta === 0 ? 0 : delta / (1 - Math.abs(2 * l - 1));
-//   s = +(s * 100).toFixed(1);
-//   l = +(l * 100).toFixed(1);
-
-//   console.log(
-//     "hsl(" + Math.round(h) + "," + Math.round(s) + "," + Math.round(l) + ")"
-//   );
-// }
+export default function hexToHsl(hex: string): number[] {
+  let rgb = hex
+    .replace(
+      /^#?([a-f\d])([a-f\d])([a-f\d])$/i,
+      (m, r, g, b) => "#" + r + r + g + g + b + b
+    )
+    .substring(1)
+    .match(/.{2}/g)
+    .map((x) => parseInt(x, 16));
+  (rgb[0] /= 255), (rgb[1] /= 255), (rgb[2] /= 255);
+  var max = Math.max(rgb[0], rgb[1], rgb[2]),
+    min = Math.min(rgb[0], rgb[1], rgb[2]);
+  var h: number,
+    s: number,
+    l: number = (max + min) / 2;
+  if (max == min) {
+    h = s = 0;
+  } else {
+    var d = max - min;
+    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+    switch (max) {
+      case rgb[0]:
+        h = (rgb[1] - rgb[2]) / d + (rgb[1] < rgb[2] ? 6 : 0);
+        break;
+      case rgb[1]:
+        h = (rgb[2] - rgb[1]) / d + 2;
+        break;
+      case rgb[2]:
+        h = (rgb[0] - rgb[1]) / d + 4;
+        break;
+    }
+    h /= 6;
+  }
+  return [h, s, l];
+}
