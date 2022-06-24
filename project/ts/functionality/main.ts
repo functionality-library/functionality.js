@@ -16,6 +16,7 @@ import randomNumber from "./randoms/randomNumber";
 import removeDuplicate from "./arrays/removeDuplicate";
 import reverseString from "./strings/reverseString";
 import reverseNumber from "./numbers/reverseNumber";
+import addCommas from "./numbers/addCommas";
 import shuffle from "./arrays/shuffle";
 import randomString from "./randoms/randomString";
 import randomColor from "./randoms/randomColor";
@@ -36,6 +37,7 @@ import getDays from "./user/getDays";
 import getHours from "./user/getHours";
 import getMinutes from "./user/getMinutes";
 import getSeconds from "./user/getSeconds";
+import getBirthDay from "./user/getBirthDay";
 import select from "./dom/select";
 
 const functionality = {
@@ -54,6 +56,7 @@ const functionality = {
   randomElementFrom,
   randomHex,
   randomNumber,
+  addCommas,
   removeDuplicate,
   reverseString,
   reverseNumber,
@@ -75,6 +78,7 @@ const functionality = {
   getHours,
   getSeconds,
   getMinutes,
+  getBirthDay,
   select,
 };
 
