@@ -1,7 +1,7 @@
 {
   "name": "functionality.js",
   "entry": "index.js",
-  "version": "3.2.1",
+  "version": "3.2.3",
   "description": "- This Is A JavaScript Library To Make Your Work Easier/Faster,<br />\r   You Can See Functionalty.js Website From Here\r - Born In May  5 / 16 / 2022",
   "main": "index.js",
   "scripts": {
