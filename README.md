@@ -87,7 +87,7 @@
 - Run Website In Your Locahost Server With Live Reload
 
   ```sh
-  npm start
+  npm run dev
   ```
 
 - Feel Free To Add What You Want!
