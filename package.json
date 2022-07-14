@@ -1,9 +1,9 @@
 {
   "name": "functionality.js",
   "entry": "index.js",
-  "version": "3.2.3",
+  "version": "3.2.4",
   "description": "- This Is A JavaScript Library To Make Your Work Easier/Faster,<br />\r   You Can See Functionalty.js Website From Here\r - Born In May  5 / 16 / 2022",
-  "homepage": "https://github.com/Ali-Eldeba/functionalty.js#readme",
+  "homepage": "https://github.com/alieldeba/functionalty.js#readme",
   "author": "alieldeba",
   "main": "index.js",
   "keywords": [
@@ -19,11 +19,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ali-Eldeba/functionalty.js.git"
+    "url": "git+https://github.com/alieldeba/functionalty.js.git"
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Ali-Eldeba/functionalty.js/issues"
+    "url": "https://github.com/alieldeba/functionalty.js/issues"
   },
   "devDependencies": {
     "jest": "^26.6.3",
