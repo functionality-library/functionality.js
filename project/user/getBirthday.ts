@@ -4,7 +4,7 @@
  * @param {number} year
  * @returns {number}
  */
-export default function getBirthDay(year: number): number {
+ export default function getBirthday(year: number): number {
   var currentDate = new Date();
   var currentYear = currentDate.getFullYear();
   return currentYear - year;

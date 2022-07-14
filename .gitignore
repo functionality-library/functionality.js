@@ -19,3 +19,6 @@ ehthumbs_vista.db
 *.msix
 *.msm
 *.msp
+
+# Small Unimportant files
+futureFunctions.txt

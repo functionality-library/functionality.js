@@ -2,16 +2,16 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   plugins: [],
-  root: "./project/ts/functionality",
+  root: "./project/",
   build: {
-    outDir: "./../../../dist",
+    outDir: "./dist",
     rollupOptions: {
       output: {
-        entryFileNames: "functionality.min.js",  
-      }
+        entryFileNames: "functionality.min.js",
+      },
     },
     emptyOutDir: true,
-    assetsDir: "./../../../dist",
+    assetsDir: "./dist",
     watch: {
       buildDelay: 0,
       clearScreen: true,

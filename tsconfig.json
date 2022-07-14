@@ -1,5 +1,5 @@
 {
-  "files": ["project/ts/functionality/main.ts"],
+  "files": ["project/main.ts"],
   "compilerOptions": {
     "noImplicitAny": true,
     "target": "es2015",
