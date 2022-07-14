@@ -87,7 +87,13 @@
 - Run Website In Your Locahost Server With Live Reload
 
   ```sh
-  npm start
+  npm run dev
+  ```
+  
+- Run the Build
+
+  ```sh
+  npm run build-npm
   ```
 
 - Feel Free To Add What You Want!
