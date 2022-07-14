@@ -38,7 +38,7 @@ import getHours from "./user/getHours";
 import getMinutes from "./user/getMinutes";
 import getSeconds from "./user/getSeconds";
 import getBirthday from "./user/getBirthday";
-import copy from "./user/copy";
+// import copy from "./user/copy";
 import select from "./dom/select";
 
 const functionality = {
@@ -80,7 +80,7 @@ const functionality = {
   getMinutes,
   getSeconds,
   getBirthday,
-  copy,
+  // copy,
   select,
 };
 

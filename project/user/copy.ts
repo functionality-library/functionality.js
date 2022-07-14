@@ -1,8 +1,14 @@
 /**
  * It takes text to copy it to the user
  *
- * @param {string} text - The text to copy to the clipboard.
+ * @param {string} text
  */
-export default function copy(text: string): void {
-  navigator.clipboard.writeText(text);
+export default async function copy(text: string) {
+  try {
+    const toCopy = text || location.href;
+    await navigator.clipboard.writeText(toCopy);
+    console.log("Text or Page URL copied");
+  } catch (err) {
+    console.error("Failed to copy: ", err);
+  }
 }

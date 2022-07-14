@@ -4,14 +4,14 @@ export default defineConfig({
   plugins: [],
   root: "./project/",
   build: {
-    outDir: "./dist",
+    outDir: "../dist",
     rollupOptions: {
       output: {
         entryFileNames: "functionality.min.js",
       },
     },
     emptyOutDir: true,
-    assetsDir: "./dist",
+    assetsDir: "../dist",
     watch: {
       buildDelay: 0,
       clearScreen: true,
