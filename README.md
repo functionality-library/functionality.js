@@ -4,9 +4,9 @@
 
 <p float="right">
 <!-- License -->
-<img src="https://img.shields.io/github/license/alieldeba/functionalty.js?style=for-the-badge" />
+<img src="https://img.shields.io/github/license/functionality-library/functionality.js?style=for-the-badge" />
 <!-- Stars -->
- <img src="https://img.shields.io/github/stars/alieldeba/functionality.js?style=for-the-badge" />
+ <img src="https://img.shields.io/github/stars/functionality-library/functionality.js?style=for-the-badge" />
 <!-- Node Version -->
 <img src="https://img.shields.io/badge/node-16.15.1-red?style=for-the-badge" />
 </p>
