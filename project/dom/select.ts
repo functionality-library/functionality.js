@@ -1,5 +1,5 @@
 /**
- * returns the number of Seconds in a given age
+ * gets HTML dom element
  *
  * @param {string} element
  * @returns {number}
